@@ -603,6 +603,34 @@ body main .rofan ul li .bookdtl span {
 body main .time {
   background: #eee;
   padding: 100px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .time .title {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+
+body main .time .detail {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
 }
 
 body footer {

@@ -398,6 +398,18 @@ body{
         .time{
             background:#eee;
             padding:100px 10%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title{
+                @include title();
+                text-align: center;
+            }
+            .detail{
+                @include detail();
+                text-align: center;
+            }
         }
         .bookcase{}
         .free{}
