@@ -397,6 +397,56 @@ body{
         }
         .time{
             background:#eee;
+            padding:100px 10% 0;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title{
+                @include title();
+                text-align: center;
+            }
+            .detail{
+                @include detail();
+                text-align: center;
+            }
+            figure{
+                position: relative;
+                margin-top:50px;
+                img{
+                    vertical-align: top;
+                    &:nth-of-type(2){
+                        position:absolute;
+                        left:50%; top:50%;
+                        transform: translate(-50%,-50%);
+                        width:100%;
+                    }
+                    &:nth-of-type(3){
+                        position:absolute;
+                        width:50%;
+                        left:-60%; top:10%;
+                    }
+                    &:nth-of-type(4){
+                        position:absolute;
+                        width:50%;
+                        left:-70%; top:50%;
+                    }
+                    &:nth-of-type(5){
+                        position:absolute;
+                        width:50%;
+                        right:-60%; top:10%;
+                    }
+                    &:nth-of-type(6){
+                        position:absolute;
+                        width:50%;
+                        right:-70%; top:50%;
+                    }
+                }
+            }
+        }
+        .bookcase{
+            border-top:15px solid #fff;
+            background:#eee;
             padding:100px 10%;
             display:flex;
             flex-direction: column;
@@ -410,9 +460,47 @@ body{
                 @include detail();
                 text-align: center;
             }
+            ul{
+                margin-top:50px;
+                li{
+                    position: relative;
+                    display:flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    img{
+                        width:100%;
+                    }
+                    .case{
+                        position:absolute;
+                        width:200px;
+                    }
+                    &:nth-of-type(1) .case{
+                        right:5%;
+                    }
+                    &:nth-of-type(2) .case{
+                        left:5%;
+                    }
+                    &:nth-of-type(3) .case{
+                        right:5%;
+                    }
+                }
+            }
         }
-        .bookcase{}
-        .free{}
+        .free{
+            background:#ffeb60;
+            padding: 100px 10%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            .frcon-1{
+                .title{
+                    @include title();
+                }
+                .detail{
+                    @include detail();
+                }
+            }
+        }
         .function{}
         .story{}
         .faq{}

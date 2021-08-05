@@ -602,7 +602,7 @@ body main .rofan ul li .bookdtl span {
 
 body main .time {
   background: #eee;
-  padding: 100px 10%;
+  padding: 100px 10% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,6 +631,151 @@ body main .time .detail {
   color: #555;
   line-height: 1.5;
   text-align: center;
+}
+
+body main .time figure {
+  position: relative;
+  margin-top: 50px;
+}
+
+body main .time figure img {
+  vertical-align: top;
+}
+
+body main .time figure img:nth-of-type(2) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+body main .time figure img:nth-of-type(3) {
+  position: absolute;
+  width: 50%;
+  left: -60%;
+  top: 10%;
+}
+
+body main .time figure img:nth-of-type(4) {
+  position: absolute;
+  width: 50%;
+  left: -70%;
+  top: 50%;
+}
+
+body main .time figure img:nth-of-type(5) {
+  position: absolute;
+  width: 50%;
+  right: -60%;
+  top: 10%;
+}
+
+body main .time figure img:nth-of-type(6) {
+  position: absolute;
+  width: 50%;
+  right: -70%;
+  top: 50%;
+}
+
+body main .bookcase {
+  border-top: 15px solid #fff;
+  background: #eee;
+  padding: 100px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .bookcase .title {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+
+body main .bookcase .detail {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+body main .bookcase ul {
+  margin-top: 50px;
+}
+
+body main .bookcase ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main .bookcase ul li img {
+  width: 100%;
+}
+
+body main .bookcase ul li .case {
+  position: absolute;
+  width: 200px;
+}
+
+body main .bookcase ul li:nth-of-type(1) .case {
+  right: 5%;
+}
+
+body main .bookcase ul li:nth-of-type(2) .case {
+  left: 5%;
+}
+
+body main .bookcase ul li:nth-of-type(3) .case {
+  right: 5%;
+}
+
+body main .free {
+  background: #ffeb60;
+  padding: 100px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .free .frcon-1 .title {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+body main .free .frcon-1 .detail {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
 }
 
 body footer {
