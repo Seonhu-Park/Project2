@@ -1,5 +1,6 @@
 *{padding:0; margin:0;}
 li{list-style: none;}
+a{text-decoration: none;}
 
 @mixin title(){
     font-size: 50px;
@@ -21,7 +22,7 @@ body{
         width:100vw;
         height:60px;
         background-color: rgba(167,163,154,0.9);
-        border-bottom:1px solid #eee;
+        border-bottom:1px solid #F6F6F6;
         display:flex;
         justify-content: space-between;
         align-items: center;
@@ -91,7 +92,7 @@ body{
             }
         }
         .bestpoint{
-            background:#eee;
+            background:#F6F6F6;
             padding:100px 10%;
             article{
                 text-align: center;
@@ -227,7 +228,7 @@ body{
             }
         }
         .newbook{
-            background:#eee;
+            background:#F6F6F6;
             padding: 100px 10%;
             display:flex;
             flex-direction: column;
@@ -339,7 +340,7 @@ body{
             }
         }
         .rofan{
-            border-top:15px solid #eee;
+            border-top:15px solid #F6F6F6;
             background:#fff;
             padding: 100px 10%;
             display:flex;
@@ -396,7 +397,7 @@ body{
             }
         }
         .time{
-            background:#eee;
+            background:#F6F6F6;
             padding:100px 10% 0;
             display:flex;
             flex-direction: column;
@@ -446,7 +447,7 @@ body{
         }
         .bookcase{
             border-top:15px solid #fff;
-            background:#eee;
+            background:#F6F6F6;
             padding:100px 10%;
             display:flex;
             flex-direction: column;
@@ -500,8 +501,54 @@ body{
                     @include detail();
                 }
             }
+            .frcon-2{
+                ul{
+                    li{
+                        padding:50px 120px;
+                        background:#fff;
+                        margin:20px;
+                        border-radius: 30px;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size:20px;
+                        margin-bottom:20px;
+                        line-height:1.5;
+                    }
+                }
+            }
         }
-        .function{}
+        .function{
+            background:#fff;
+            nav{
+                display:flex;
+                justify-content: center;
+                div{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width:30%;
+                    height:120px;
+                    border-right:1px solid #F6F6F6;
+                    &:nth-of-type(3){
+                        border-right:0px;
+                    }
+                    img{
+                        width:8%;
+                    }
+                    p{
+                        font-size:14px;
+                        margin-top:10px;
+                    }
+                }
+            }
+            .con1{
+                background:#F6F6F6;
+                padding:100px 10%;
+            }
+            .con2{}
+            .con3{}
+        }
         .story{}
         .faq{}
     }

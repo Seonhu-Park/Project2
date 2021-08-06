@@ -8,6 +8,10 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body header {
   position: fixed;
   left: 0;
@@ -16,7 +20,7 @@ body header {
   width: 100vw;
   height: 60px;
   background-color: rgba(167, 163, 154, 0.9);
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +133,7 @@ body main .video video {
 }
 
 body main .bestpoint {
-  background: #eee;
+  background: #F6F6F6;
   padding: 100px 10%;
 }
 
@@ -336,7 +340,7 @@ body main .howmany .hmcon-2 img {
 }
 
 body main .newbook {
-  background: #eee;
+  background: #F6F6F6;
   padding: 100px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,7 +516,7 @@ body main .bestseller ul li .bookdtl span {
 }
 
 body main .rofan {
-  border-top: 15px solid #eee;
+  border-top: 15px solid #F6F6F6;
   background: #fff;
   padding: 100px 10%;
   display: -webkit-box;
@@ -601,7 +605,7 @@ body main .rofan ul li .bookdtl span {
 }
 
 body main .time {
-  background: #eee;
+  background: #F6F6F6;
   padding: 100px 10% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,7 +685,7 @@ body main .time figure img:nth-of-type(6) {
 
 body main .bookcase {
   border-top: 15px solid #fff;
-  background: #eee;
+  background: #F6F6F6;
   padding: 100px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,6 +780,68 @@ body main .free .frcon-1 .detail {
   font-weight: 400;
   color: #555;
   line-height: 1.5;
+}
+
+body main .free .frcon-2 ul li {
+  padding: 50px 120px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+body main .function {
+  background: #fff;
+}
+
+body main .function nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .function nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 120px;
+  border-right: 1px solid #F6F6F6;
+}
+
+body main .function nav div:nth-of-type(3) {
+  border-right: 0px;
+}
+
+body main .function nav div img {
+  width: 8%;
+}
+
+body main .function nav div p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+body main .function .con1 {
+  background: #F6F6F6;
+  padding: 100px 10%;
 }
 
 body footer {
