@@ -16,6 +16,31 @@ input:focus {
   outline: none;
 }
 
+body {
+  position: relative;
+}
+
+body .cm {
+  cursor: pointer;
+  z-index: 120;
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 16px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(pink), to(#ffeb60));
+  background: linear-gradient(to right, pink, #ffeb60);
+  border-radius: 30px;
+  white-space: pre-line;
+  color: #333;
+  padding: 15px 100px;
+  font-weight: 400;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
 body header {
   position: fixed;
   left: 0;
@@ -47,17 +72,24 @@ body header figure img {
   height: 100%;
 }
 
-body header a {
+body header .hdmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .hdmenu a {
   color: #000;
 }
 
-body header a:visited {
+body header .hdmenu a:visited {
   color: #000;
 }
 
-body header a div {
+body header .hdmenu a div {
+  margin-left: 10px;
   background-color: #ffeb60;
-  padding: 9px 25px;
+  padding: 9px 20px;
   border-radius: 30px;
   font-size: 12px;
 }

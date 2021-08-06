@@ -1,8 +1,10 @@
+//MEMO 공통 
 *{padding:0; margin:0;}
 li{list-style: none;}
 a{text-decoration: none;}
 input:focus{outline:none;}
 
+//MEMO 믹스인 
 @mixin title(){
     font-size: 50px;
     font-weight: 900;
@@ -25,6 +27,24 @@ input:focus{outline:none;}
 }
 
 body{
+    position: relative;
+    //MEMO 헤더 
+    .cm{
+        cursor:pointer;
+        z-index: 120;
+        position:fixed;
+        left:50%; bottom:15px;
+        transform:translateX(-50%);
+        font-size:16px;
+        text-align:center;
+        background:linear-gradient(to right, pink, #ffeb60);
+        border-radius:30px;
+        white-space: pre-line;
+        color:#333;
+        padding:15px 100px;
+        font-weight:400;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
     header{
         position: fixed;
         left:0; top:0;
@@ -42,20 +62,26 @@ body{
             height:40%;
             img{height:100%;}
         }
-        a{
-            color:#000;
-            &:visited{
+        .hdmenu{
+            display:flex;
+            a{
                 color:#000;
-            }
-            div{
-                background-color: #ffeb60;
-                padding:9px 25px;
-                border-radius: 30px;
-                font-size: 12px;
+                &:visited{
+                    color:#000;
+                }
+                div{
+                    margin-left:10px;
+                    background-color: #ffeb60;
+                    padding:9px 20px;
+                    border-radius: 30px;
+                    font-size: 12px;
+                }
             }
         }
     }
+    //MEMO 메인 
     main{
+        //MEMO 배너 
         .banner{
             position: relative;
             width:100vw;
@@ -100,6 +126,7 @@ body{
                 100%{bottom:2%;}
             }
         }
+        //MEMO 비디오 
         .video{
             width:100vw;
             video{
@@ -107,6 +134,7 @@ body{
                 vertical-align: top;
             }
         }
+        //MEMO 장점 
         .bestpoint{
             width:100vw;
             box-sizing: border-box;
@@ -149,6 +177,7 @@ body{
                 }
             }
         }
+        //MEMO 책보유량 
         .howmany{
             width:100vw;
             box-sizing: border-box;
@@ -247,6 +276,7 @@ body{
                 }
             }
         }
+        //MEMO 신간 
         .newbook{
             width:100vw;
             box-sizing: border-box;
@@ -305,6 +335,7 @@ body{
                 }
             }
         }
+        //MEMO 베스트셀러 
         .bestseller{
             width:100vw;
             box-sizing: border-box;
@@ -392,6 +423,7 @@ body{
                 }
             }
         }
+        //MEMO 판타지 로맨스 
         .rofan{
             width:100vw;
             box-sizing: border-box;
@@ -451,6 +483,7 @@ body{
                 }
             }
         }
+        //MEMO 소요시간 
         .time{
             width:100vw;
             box-sizing: border-box;
@@ -502,6 +535,7 @@ body{
                 }
             }
         }
+        //MEMO 책장이미지 
         .bookcase{
             width:100vw;
             box-sizing: border-box;
@@ -546,6 +580,7 @@ body{
                 }
             }
         }
+        //MEMO 무료구독서비스 
         .free{
             width:100vw;
             box-sizing: border-box;
@@ -578,6 +613,7 @@ body{
                 }
             }
         }
+        //MEMO 앱 기능 
         .function{
             width:100vw;
             box-sizing: border-box;
@@ -661,6 +697,7 @@ body{
                 display:none;
             }
         }
+        //MEMO 구독자 스토리 
         .story{
             width:100vw;
             box-sizing: border-box;
@@ -687,6 +724,7 @@ body{
                 }
             }
         }
+        //MEMO 질문 
         .faq{
             width:100vw;
             box-sizing: border-box;
@@ -739,6 +777,7 @@ body{
             }
         }
     }
+    //MEMO 푸터 
     footer{
         width:100vw;
         box-sizing: border-box;
