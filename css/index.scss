@@ -382,7 +382,7 @@ body{
                     }
                 }
             }
-            ul{
+            .bstlist{
                 margin-top:15px;
                 display:flex;
                 justify-content: space-between;
@@ -421,6 +421,22 @@ body{
                         }
                     }
                 }
+            }
+            .bst-1{}
+            .bst-2{
+                display:none;
+            }
+            .bst-3{
+                display:none;
+            }
+            .bst-4{
+                display:none;
+            }
+            .bst-5{
+                display:none;
+            }
+            .bst-6{
+                display:none;
             }
         }
         //MEMO 판타지 로맨스 
@@ -681,9 +697,24 @@ body{
                     }
                 }
                 .cellphone{
+                    position: relative;
                     width:26%;
+                    display:flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    // overflow: hidden;
                     > img{
                         width:100%;
+                        border-radius: 50px;
+                    }
+                    video{
+                        width:95%;
+                    }
+                    .frame{
+                        width:105%;
+                        position:absolute;
+                        left:0; top:0;
+                        border-radius: 50px;
                     }
                 }
             }

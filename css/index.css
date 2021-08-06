@@ -549,7 +549,7 @@ body main .bestseller .besttab p:nth-of-type(1) {
   color: white;
 }
 
-body main .bestseller ul {
+body main .bestseller .bstlist {
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,13 +562,13 @@ body main .bestseller ul {
           align-items: flex-end;
 }
 
-body main .bestseller ul li {
+body main .bestseller .bstlist li {
   position: relative;
   width: 20%;
   margin: 0 5px;
 }
 
-body main .bestseller ul li:nth-of-type(1)::before {
+body main .bestseller .bstlist li:nth-of-type(1)::before {
   position: absolute;
   right: 5px;
   top: 8%;
@@ -579,7 +579,7 @@ body main .bestseller ul li:nth-of-type(1)::before {
   z-index: 30;
 }
 
-body main .bestseller ul li img {
+body main .bestseller .bstlist li img {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 0 10px 10px 0;
@@ -587,21 +587,41 @@ body main .bestseller ul li img {
   vertical-align: top;
 }
 
-body main .bestseller ul li .badge {
+body main .bestseller .bstlist li .badge {
   position: absolute;
   width: 30%;
   right: -3px;
   top: 3%;
 }
 
-body main .bestseller ul li .bookdtl {
+body main .bestseller .bstlist li .bookdtl {
   margin-top: 15px;
   padding: 0 2px;
   height: 80px;
 }
 
-body main .bestseller ul li .bookdtl span {
+body main .bestseller .bstlist li .bookdtl span {
   font-size: 16px;
+}
+
+body main .bestseller .bst-2 {
+  display: none;
+}
+
+body main .bestseller .bst-3 {
+  display: none;
+}
+
+body main .bestseller .bst-4 {
+  display: none;
+}
+
+body main .bestseller .bst-5 {
+  display: none;
+}
+
+body main .bestseller .bst-6 {
+  display: none;
 }
 
 body main .rofan {
@@ -1015,11 +1035,34 @@ body main .function .conall .minitab ul li:nth-of-type(1) {
 }
 
 body main .function .conall .cellphone {
+  position: relative;
   width: 26%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .function .conall .cellphone > img {
   width: 100%;
+  border-radius: 50px;
+}
+
+body main .function .conall .cellphone video {
+  width: 95%;
+}
+
+body main .function .conall .cellphone .frame {
+  width: 105%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
 }
 
 body main .function .con2 {
