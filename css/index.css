@@ -1058,6 +1058,7 @@ body main .faq ul li .detailall .detail {
 }
 
 body main .faq ul li .answer {
+  white-space: pre-line;
   font-size: 16px;
   font-weight: 400;
   color: #777;
