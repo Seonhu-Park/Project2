@@ -742,7 +742,20 @@ body{
             .strcon-1{
                 position:absolute;
                 left:15%; top:-10%;
-                iframe{}
+                iframe{
+                    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+                }
+                > img{
+                    position:absolute;
+                    left:0; top:0;
+                    width:400px;
+                }
+                .vdobtn{
+                    width:60px;
+                    position:absolute;
+                    left:50%; top:50%;
+                    transform:translate(-50%,-50%);
+                }
             }
             .strcon-2{
                 position:absolute;
