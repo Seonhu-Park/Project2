@@ -8,10 +8,14 @@ a {
   text-decoration: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 main {
   width: 100vw;
   height: 100vh;
-  background: url("../img/login/login.jpg") no-repeat;
+  background: url("../img/login/login.jpg") center no-repeat;
   background-size: cover;
 }
 

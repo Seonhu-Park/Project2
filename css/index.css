@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 body header {
   position: fixed;
   left: 0;
@@ -137,6 +141,9 @@ body main .video video {
 }
 
 body main .bestpoint {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #F6F6F6;
   padding: 100px 10%;
 }
@@ -204,6 +211,9 @@ body main .bestpoint ul li p:nth-of-type(2) {
 }
 
 body main .howmany {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #ffeb60;
   padding: 100px 10%;
   display: -webkit-box;
@@ -344,6 +354,9 @@ body main .howmany .hmcon-2 img {
 }
 
 body main .newbook {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #F6F6F6;
   padding: 100px 10%;
   display: -webkit-box;
@@ -432,6 +445,9 @@ body main .newbook ul li .bookdtl span {
 }
 
 body main .bestseller {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #fff;
   padding: 100px 10%;
   display: -webkit-box;
@@ -520,6 +536,9 @@ body main .bestseller ul li .bookdtl span {
 }
 
 body main .rofan {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-top: 15px solid #F6F6F6;
   background: #fff;
   padding: 100px 10%;
@@ -609,6 +628,9 @@ body main .rofan ul li .bookdtl span {
 }
 
 body main .time {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #F6F6F6;
   padding: 100px 10% 0;
   display: -webkit-box;
@@ -688,6 +710,9 @@ body main .time figure img:nth-of-type(6) {
 }
 
 body main .bookcase {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-top: 15px solid #fff;
   background: #F6F6F6;
   padding: 100px 10%;
@@ -760,6 +785,9 @@ body main .bookcase ul li:nth-of-type(3) .case {
 }
 
 body main .free {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #ffeb60;
   padding: 100px 10%;
   display: -webkit-box;
@@ -799,6 +827,9 @@ body main .free .frcon-2 ul li {
 }
 
 body main .function {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #fff;
 }
 
@@ -826,7 +857,7 @@ body main .function nav div {
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  height: 120px;
+  height: 100px;
   border-right: 1px solid #F6F6F6;
 }
 
@@ -843,12 +874,211 @@ body main .function nav div p {
   margin-top: 10px;
 }
 
-body main .function .con1 {
+body main .function nav div:nth-of-type(1) {
   background: #F6F6F6;
-  padding: 100px 10%;
+}
+
+body main .function .conall {
+  background: #F6F6F6;
+  padding: 50px 10% 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .function .conall div > img {
+  width: 50px;
+  margin: 30px 0;
+}
+
+body main .function .conall div .title {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+body main .function .conall div .detail {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+}
+
+body main .function .conall .minitab {
+  margin-top: 70%;
+}
+
+body main .function .conall .minitab .detail {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+}
+
+body main .function .conall .minitab ul {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body main .function .conall .minitab ul li {
+  cursor: pointer;
+  padding: 3px 18px;
+  background: #F6F6F6;
+  border: 1px solid #333;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+body main .function .conall .minitab ul li:nth-of-type(1) {
+  background: #333;
+  color: white;
+}
+
+body main .function .conall .cellphone {
+  width: 30%;
+}
+
+body main .function .conall .cellphone > img {
+  width: 100%;
+}
+
+body main .function .con2 {
+  display: none;
+}
+
+body main .function .con3 {
+  display: none;
+}
+
+body main .story {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 500px;
+  position: relative;
+  background: url("../img/review-bg.png") center no-repeat;
+  background-size: cover;
+  padding: 100px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .story .strcon-1 {
+  position: absolute;
+  left: 15%;
+  top: -10%;
+}
+
+body main .story .strcon-2 {
+  position: absolute;
+  right: 15%;
+  top: 15%;
+}
+
+body main .story .strcon-2 .title {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+body main .story .strcon-2 .detail {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.5;
+}
+
+body main .faq {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #ffeb60;
+  padding: 0 10% 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .faq .title {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 80px 0;
+}
+
+body main .faq ul {
+  width: 80%;
+}
+
+body main .faq ul li {
+  width: 100%;
+  background: #fff;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+body main .faq ul li .detailall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .faq ul li .detailall .detail {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.5;
+}
+
+body main .faq ul li .answer {
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.5;
+}
+
+body main .faq ul li .answer:before {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  margin: 20px 0;
 }
 
 body footer {
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #fff;
   padding: 30px 5% 80px 5%;
 }
