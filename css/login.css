@@ -83,6 +83,7 @@ main .login form #submit {
   border: 0px;
   background: url("../img/login/휴대폰 번호로 로그인.svg") no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 main .login .or span {

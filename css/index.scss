@@ -32,11 +32,16 @@ body{
             height:40%;
             img{height:100%;}
         }
-        div{
-            background-color: #ffeb60;
-            padding:9px 25px;
-            border-radius: 30px;
-            font-size: 12px;
+        a{
+            &:visited{
+                color:#000;
+            }
+            div{
+                background-color: #ffeb60;
+                padding:9px 25px;
+                border-radius: 30px;
+                font-size: 12px;
+            }
         }
     }
     main{

@@ -43,7 +43,11 @@ body header figure img {
   height: 100%;
 }
 
-body header div {
+body header a:visited {
+  color: #000;
+}
+
+body header a div {
   background-color: #ffeb60;
   padding: 9px 25px;
   border-radius: 30px;
