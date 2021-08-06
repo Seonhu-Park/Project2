@@ -843,6 +843,7 @@ body main .function nav {
 }
 
 body main .function nav div {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1034,6 +1035,8 @@ body main .faq ul {
 }
 
 body main .faq ul li {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   background: #fff;
   padding: 20px 30px;
