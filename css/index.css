@@ -47,6 +47,10 @@ body header figure img {
   height: 100%;
 }
 
+body header a {
+  color: #000;
+}
+
 body header a:visited {
   color: #000;
 }
