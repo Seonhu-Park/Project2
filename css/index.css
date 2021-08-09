@@ -18,6 +18,28 @@ input:focus {
   outline: none;
 }
 
+@-webkit-keyframes a1 {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes a1 {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 body {
   position: relative;
 }
@@ -217,16 +239,34 @@ body main .bestpoint article {
 }
 
 body main .bestpoint article .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
 }
 
+body main .bestpoint article .title.scrFnc {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
 body main .bestpoint article .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
+}
+
+body main .bestpoint article .detail.scrFnc {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .bestpoint ul {
@@ -1281,6 +1321,12 @@ body footer article ul li {
     width: 60vw;
     padding: 17px 0px;
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body .cm:hover {
     background: #333;
@@ -1686,6 +1732,12 @@ body footer article ul li {
   body .cm {
     width: 60vw;
     padding: 17px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body main .banner {
     overflow: hidden;

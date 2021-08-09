@@ -30,6 +30,13 @@ input:focus{outline:none;}
     font-size: 14px;
     margin-right:10px;
 }
+@mixin a1(){
+    animation: a1 1.5s alternate;
+}
+@keyframes a1 {
+    0%{transform:translateY(50px);}
+    100%{transform:translateY(0);}
+}
 
 body{
     position: relative;
@@ -167,10 +174,22 @@ body{
             article{
                 text-align: center;
                 .title{
+                    opacity:0;
                     @include title();
                 }
+                .title.scrFnc{
+                    transition:1s;
+                    opacity:1;
+                    @include a1();
+                }
                 .detail{
+                    opacity:0;
                     @include detail();
+                }
+                .detail.scrFnc{
+                    transition:1s;
+                    opacity:1;
+                    @include a1();
                 }
             }
             ul{
@@ -887,6 +906,8 @@ body{
             width:60vw;
             padding:17px 0px;
             font-size:14px;
+            display:flex;
+            justify-content: center;
             &:hover{
                 background:#333;
             }
@@ -1259,6 +1280,8 @@ body{
         .cm{
             width:60vw;
             padding: 17px 0;
+            display:flex;
+            justify-content: center;
         }
         main{
             .banner{
