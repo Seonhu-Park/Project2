@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+
+*{
+    padding:0; margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+    width:100vw; height:100vh;
+    box-sizing: border-box;
+    header{
+        text-align: center;
+        padding:20px;
+        border-bottom:1px solid #ddd;
+        font-weight: 900;
+        margin-bottom:50px;
+    }
+    main{
+        width:700px;
+        margin:0 auto;
+        span{}
+        form{
+            margin:10px 0 20px 0;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            #tel{
+                width:100%;
+                padding:10px;
+                font-size: 18px;
+                border:1px solid #999;
+                margin-right:10px;
+            }
+            #submit{
+                padding:10px 30px;
+                font-size: 18px;
+                border:1px solid #ffeb60;
+                background-color: #ffeb60;
+            }
+        }
+        p{
+            font-size: 16px;
+            color:#999;
+            margin:5px 0;
+            a{
+                color:#999;
+                &:visited{
+                    color:#999;
+                }
+            }
+        }
+        hr{
+            border:0px;
+            border-bottom:1px solid #999;
+            margin:30px 0;
+        }
+    }
+    footer{
+        width:100%;
+        padding:20px;
+        position:fixed;
+        left:0; bottom:0;
+        background-color: #ffeb60;
+        text-align: center;
+        font-weight: 900;
+        box-sizing: border-box;
+    }
+}
+
+
+// TODO 반응형 모바일 
+@media (min-width:360px) and (max-width:767px){
+body{
+    main{
+        width:90vw;
+        form{
+            #tel{
+                font-size:14px;
+            }
+            #submit{
+                font-size:14px;
+            }
+        }
+        p{
+            font-size:12px;
+        }
+    }
+}
+}

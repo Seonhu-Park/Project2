@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+
 //MEMO 공통 
-*{padding:0; margin:0;}
+*{
+    padding:0; margin:0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
 li{list-style: none;}
 a{text-decoration: none;}
 input:focus{outline:none;}
@@ -37,13 +42,16 @@ body{
         transform:translateX(-50%);
         font-size:18px;
         text-align:center;
-        background:linear-gradient(to right, pink, #ffeb60);
+        background:#333;
         border-radius:30px;
-        white-space: pre-line;
-        color:#333;
+        color:#fff;
         padding:17px 100px;
         font-weight:400;
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        
+        &:hover{
+            background:linear-gradient(to left, #a750f3, #ffeb60);
+        }
     }
     header{
         position: fixed;
@@ -698,7 +706,7 @@ body{
                 }
                 .cellphone{
                     position: relative;
-                    width:26%;
+                    width:300px;
                     display:flex;
                     justify-content: flex-start;
                     align-items: center;
@@ -714,7 +722,7 @@ body{
                         width:105%;
                         position:absolute;
                         left:0; top:0;
-                        border-radius: 50px;
+                        border-radius: 0px;
                     }
                 }
             }
@@ -732,7 +740,7 @@ body{
         .story{
             width:100vw;
             box-sizing: border-box;
-            height:500px;
+            height:35vw;
             position:relative;
             background:url('../img/review-bg.png') center no-repeat;
             background-size: cover;
@@ -746,6 +754,7 @@ body{
                     box-shadow: 0 0 30px rgba(0,0,0,0.2);
                 }
                 > img{
+                    cursor: pointer;
                     position:absolute;
                     left:0; top:0;
                     width:400px;
@@ -853,3 +862,587 @@ body{
         }
     }
 }
+
+
+// TODO 반응형 모바일 
+@media (min-width:360px) and (max-width:767px){
+    body{
+        .cm{
+            width:60vw;
+            padding:17px 0px;
+            font-size:14px;
+            &:hover{
+                background:#333;
+            }
+        }
+        main{
+            .banner{
+                overflow: hidden;
+                div{
+                }
+                .bnimg-1{
+                    width:60%;
+                }
+                .bnimg-2{
+                    width:150%;
+                    left:-45%; top:70%;
+                }
+                .bnimg-3{
+                    display:none;
+                }
+                .bnimg-4{}
+            }
+            .bestpoint{
+                padding:50px 5%;
+                article{
+                    .title{
+                        font-size:30px;
+                    }
+                    .detail{
+                        font-size:16px;
+                    }
+                }
+                ul{
+                    flex-direction: column;
+                    li{
+                        width:100%;
+                        margin-bottom:50px;
+                        &:last-child{
+                            margin-bottom:0px;
+                        }
+                    }
+                }
+            }
+            .howmany{
+                padding: 50px 5%;
+                flex-direction: column;
+                .hmcon-1{
+                    .title{
+                        font-size:30px;
+                    }
+                    .detail{
+                        font-size:16px;
+                    }
+                    text-align: center;
+                }
+                .hmcon-2{
+                    margin-right:0%;
+                    margin-top:50px;
+                    width:70vw; height:70vw;
+                    .bar3{
+                        height:95%;
+                    }
+                    img{
+                        left:5%; top:20%;
+                    }
+                }
+            }
+            .newbook{
+                padding: 50px 5%;
+                align-items: flex-start;
+                .title{
+                    margin:0 auto;
+                    font-size:30px;
+                }
+                .detail{
+                    margin:25px auto 0;
+                    font-size:16px;
+                }
+                ul{
+                    justify-content: flex-start;
+                    margin-top:50px;
+                    li{
+                        width:28vw;
+                    }
+                }
+            }
+            .bestseller{
+                padding:50px 5%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    margin:0 auto;
+                    font-size:30px;
+                }
+                .detail{
+                    margin:25px auto 0;
+                    font-size:16px;
+                }
+                .minititle{
+                    width:90vw;
+                }
+                .besttab{
+                    width:100%;
+                    justify-content: space-between;
+                    margin: 30px 0 0 0;
+                    p{
+                        padding:5px 12px;
+                        margin-right:0px;
+                    }
+                }
+                .bstlist{
+                    li{
+                        width:28vw;
+                    }
+                }
+            }
+            .rofan{
+                padding: 50px 5%;
+                align-items: flex-start;
+                .title{
+                    margin:0 auto;
+                    font-size:30px;
+                }
+                .detail{
+                    margin:25px auto 0;
+                    font-size:16px;
+                }
+                ul{
+                    margin-top:50px;
+                    li{
+                        width:28vw;
+                    }
+                }
+            }
+            .time{
+                padding:50px 5% 0;
+                .title{
+                    margin:0 auto;
+                    font-size:30px;
+                }
+                .detail{
+                    margin:25px auto 0;
+                    font-size:16px;
+                }
+                figure{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top:300px;
+                    img{
+                        
+                        &:nth-of-type(1){
+                            width:70%;
+                            z-index:80;
+                        }
+                        &:nth-of-type(2){
+                            width:75%;
+                            z-index:81;
+                        }
+                        &:nth-of-type(3){
+                            width:40%;
+                            left:10%; top:-60%;
+                        }
+                        &:nth-of-type(4){
+                            width:40%;
+                            left:0%; top:-15%;
+                        }
+                        &:nth-of-type(5){
+                            width:40%;
+                            right:10%; top:-80%;
+                        }
+                        &:nth-of-type(6){
+                            width:40%;
+                            right:0%; top:-30%;
+                        }
+                    }
+                }
+            }
+            .bookcase{
+                padding:50px 0%;
+                .title{
+                    margin:0 auto;
+                    font-size:30px;
+                }
+                .detail{
+                    margin:25px auto 0;
+                    font-size:16px;
+                }
+                ul{
+                    li{
+                        .case{
+                            width:180px;
+                        }
+                        &:nth-of-type(1) .case{
+                            right:0;
+                        }
+                        &:nth-of-type(2) .case{
+                            left:0;
+                        }
+                        &:nth-of-type(3) .case{
+                            right:0;
+                        }
+                    }
+                }
+            }
+            .free{
+                padding:50px 5%;
+                flex-direction: column;
+                .frcon-1{
+                    .title{
+                        margin:0 auto;
+                        font-size:30px;
+                    }
+                    .detail{
+                        margin:25px auto 0;
+                        font-size:16px;
+                    }
+                    text-align: center;
+                }
+                .frcon-2{
+                    ul{
+                        li{
+                            margin:20px 0 0 0;
+                            font-size:16px;
+                            padding:30px 0;
+                            width:90vw;
+                        }
+                    }
+                }
+            }
+            .function{
+                nav{
+                    justify-content: space-between;
+                    div{
+                        width:100%;
+                        img{
+                            width:15%;
+                        }
+                    }
+                }
+                .conall{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    div{
+                        text-align: center;
+                        > img{
+                            margin:10px 0;
+                        }
+                        .title{
+                            margin:0 auto;
+                            font-size:30px;
+                        }
+                        .detail{
+                            margin:25px auto 0;
+                            font-size:16px;
+                        }
+                    }
+                    .minitab{
+                        margin-top:20px;
+                        .detail{
+                            margin:10px auto 0;
+                            font-size:16px;
+                            padding:0;
+                        }
+                        ul{
+                            margin-top:20px;
+                            justify-content: space-between;
+                            li{
+                                margin:0;
+                                padding:3px 18px;
+                            }
+                        }
+                    }
+                    .cellphone{
+                        width:200px;
+                        > img{
+                            border-radius: 35px;
+                        }
+                    }
+                }
+            }
+            .story{
+                height:80vh;
+                .strcon-1{
+                    left:50%; top:-10%;
+                    transform: translateX(-50%);
+                    iframe{
+                        width:400px; height:400px;
+                    }
+                    > img{
+                        width:400px; height:400px;
+                    }
+                    .vdobtn{
+                        width:60px; height:60px;
+                    }
+                }
+                .strcon-2{
+                    right:-50%; top:65%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    width:100%;
+                    .title{
+                        margin:0 auto;
+                        font-size:30px;
+                    }
+                    .detail{
+                        margin:25px auto 0;
+                        font-size:16px;
+                    }
+                }
+            }
+            .faq{
+                padding:50px 5%;
+                .title{
+                    margin:0 auto 50px;
+                    font-size:30px;
+                }
+                ul{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width:90%;
+                    li{
+                        padding: 15px 20px;
+                        .detailall{
+                            .detail{
+                                font-size:18px;
+                            }
+                        }
+                        .answer{
+                            font-size:14px;
+                            &:before{
+                                margin:15px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            article{
+                h5{
+                }
+                div{
+                }
+                .ft-close{
+                    // display:none;
+                }
+                ul{
+                    display:flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    li{
+                        margin-right:10px;
+                        margin-bottom:10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+};
+
+// TODO 반응형 태블릿 
+@media (min-width:768px) and (max-width:1200px){
+    body{
+        .cm{
+            width:60vw;
+            padding: 17px 0;
+        }
+        main{
+            .banner{
+                overflow: hidden;
+                height:90vh;
+                .bnimg-1{
+                    left:8%; top:18%;
+                    width:35%;
+                }
+                .bnimg-2{
+                    width:70%;
+                }
+                .bnimg-3{
+                    display:none;
+                }
+                .bnimg-4{}
+            }
+            .bestpoint{
+                padding:100px 5%;
+                ul{
+                    li{
+                        width:100%;
+                        p:nth-of-type(1){
+                            font-size:16px;
+                        }
+                        p:nth-of-type(2){
+                            font-size:12px;
+                        }
+                    }
+                }
+            }
+            .howmany{
+                padding: 100px 10%;
+                .hmcon-1{
+                    .title{
+                        font-size:30px;
+                    }
+                    .detail{
+                        font-size:18px;
+                    }
+                }
+                .hmcon-2{
+                    width:300px; height:300px;
+                    &::after{
+                        width:250px;
+                    }
+                    .bar3{
+                        height:95%;
+                    }
+                    img{
+                        right:-45%;
+                    }
+                }
+            }
+            .newbook{
+                padding: 100px 5%;
+                align-items: flex-start;
+                .title{
+                    margin:0 auto;
+                }
+                .detail{
+                    margin:25px auto 0;
+                }
+                ul{
+                    justify-content: flex-start;
+                    li{
+                        width:20vw;
+                    }
+                }
+            }
+            .bestseller{
+                padding:100px 5%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                .title{
+                    margin:0 auto;
+                }
+                .detail{
+                    margin:25px auto 0;
+                }
+                .minititle{
+                    width:90vw;
+                }
+                .besttab{
+                    width:100%;
+                    p{
+                        padding:5px 12px;
+                        margin-right:10px;
+                    }
+                }
+                .bstlist{
+                    li{
+                        width:20vw;
+                    }
+                }
+            }
+            .rofan{
+                padding: 100px 5%;
+                align-items: flex-start;
+                .title{
+                    margin:0 auto;
+                }
+                .detail{
+                    margin:25px auto 0;
+                }
+                ul{
+                    li{
+                        width:20vw;
+                    }
+                }
+            }
+            .time{
+                padding:100px 5% 0;
+                figure{
+                    img{
+                        &:nth-of-type(1){
+                            width:40vw;
+                        }
+                        &:nth-of-type(2){}
+                        &:nth-of-type(3){
+                            left:-50%; top:10%;
+                        }
+                        &:nth-of-type(4){
+                            left:-60%; top:50%;
+                        }
+                        &:nth-of-type(5){
+                            right:-50%; top:10%;
+                        }
+                        &:nth-of-type(6){
+                            right:-60%; top:50%;
+                        }
+                    }
+                }
+            }
+            .free{
+                padding:100px 10%;
+                .frcon-1{
+                    .title{
+                        font-size:45px;
+                    }
+                    .detail{
+                        font-size:18px;
+                    }
+                }
+                .frcon-2{
+                    ul{
+                        li{
+                            width:35vw;
+                            padding:30px 0px;
+                            font-size:18px;
+                        }
+                    }
+                }
+            }
+            .function{
+                nav{
+                    div{
+                        width:100%;
+                    }
+                }
+                .conall{
+                    div{
+                        > img{}
+                    }
+                    .minitab{
+                        .detail{
+                            font-size:18px;
+                        }
+                    }
+                    .cellphone{
+                        width:250px;
+                    }
+                }
+            }
+            .story{
+                height:45vw;
+                .strcon-1{
+                    iframe{
+                        width:40vw; height:40vw;
+                    }
+                    > img{
+                        width:40vw; height:40vw;
+                    }
+                    .vdobtn{
+                        width:50px; height:50px;
+                    }
+                }
+                .strcon-2{
+                    right:10%; top:15%;
+                    .title{
+                        font-size:40px;
+                    }
+                    .detail{
+                        font-size:18px;
+                    }
+                }
+            }
+        }
+        footer{}
+    }
+};

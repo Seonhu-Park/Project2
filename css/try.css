@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+body main {
+  width: 700px;
+  margin: 0 auto;
+}
+
+body main form {
+  margin: 10px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main form #tel {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #999;
+  margin-right: 10px;
+}
+
+body main form #submit {
+  padding: 10px 30px;
+  font-size: 18px;
+  border: 1px solid #ffeb60;
+  background-color: #ffeb60;
+}
+
+body main p {
+  font-size: 16px;
+  color: #999;
+  margin: 5px 0;
+}
+
+body main p a {
+  color: #999;
+}
+
+body main p a:visited {
+  color: #999;
+}
+
+body main hr {
+  border: 0px;
+  border-bottom: 1px solid #999;
+  margin: 30px 0;
+}
+
+body footer {
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #ffeb60;
+  text-align: center;
+  font-weight: 900;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  body main {
+    width: 90vw;
+  }
+  body main form #tel {
+    font-size: 14px;
+  }
+  body main form #submit {
+    font-size: 14px;
+  }
+  body main p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=try.css.map */
