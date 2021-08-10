@@ -1929,4 +1929,45 @@ body footer article ul li {
     font-size: 18px;
   }
 }
+
+@media (min-width: 1601px) and (max-width: 2000px) {
+  body main .howmany {
+    padding: 100px 20%;
+  }
+  body main .free {
+    padding: 100px 20%;
+  }
+  body main .function nav div {
+    width: 20%;
+  }
+  body main .function .conall {
+    padding: 50px 20% 100px;
+  }
+  body main .story {
+    height: 30vw;
+  }
+  body main .story .strcon-1 {
+    left: 20%;
+    top: -10%;
+  }
+  body main .story .strcon-1 iframe {
+    width: 500px;
+    height: 500px;
+  }
+  body main .story .strcon-1 > img {
+    width: 500px;
+    height: 500px;
+  }
+  body main .story .strcon-1 .vdobtn {
+    width: 80px;
+    height: 80px;
+  }
+  body main .story .strcon-2 {
+    right: 20%;
+    top: 15%;
+  }
+  body main .faq ul {
+    width: 70%;
+  }
+}
 /*# sourceMappingURL=index.css.map */

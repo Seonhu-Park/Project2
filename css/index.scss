@@ -1485,3 +1485,50 @@ body{
         footer{}
     }
 };
+
+// TODO 반응형 PC 큰 화면  
+@media (min-width:1601px) and (max-width:2000px){
+body{
+    main{
+        .howmany{
+            padding: 100px 20%;
+        }
+        .free{
+            padding: 100px 20%;
+        }
+        .function{
+            nav{
+                div{
+                    width:20%;
+                }
+            }
+            .conall{
+                padding:50px 20% 100px;
+            }
+        }
+        .story{
+            height:30vw;
+            .strcon-1{
+                left:20%; top:-10%;
+                iframe{
+                    width:500px; height:500px;
+                }
+                > img{
+                    width:500px; height:500px;
+                }
+                .vdobtn{
+                    width:80px; height:80px;
+                }
+            }
+            .strcon-2{
+                right:20%; top:15%;
+            }
+        }
+        .faq{
+            ul{
+                width:70%;
+            }
+        }
+    }
+}
+}
