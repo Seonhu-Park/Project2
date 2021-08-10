@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
 * {
   padding: 0;
@@ -245,8 +244,8 @@ body main .bestpoint article .title {
 }
 
 body main .bestpoint article .title.scrFnc {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   opacity: 1;
   -webkit-animation: a1 1.5s alternate;
           animation: a1 1.5s alternate;
@@ -262,8 +261,8 @@ body main .bestpoint article .detail {
 }
 
 body main .bestpoint article .detail.scrFnc {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   opacity: 1;
   -webkit-animation: a1 1.5s alternate;
           animation: a1 1.5s alternate;
@@ -332,16 +331,34 @@ body main .howmany {
 }
 
 body main .howmany .hmcon-1 .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
 }
 
+body main .howmany .hmcon-1 .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
 body main .howmany .hmcon-1 .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
+}
+
+body main .howmany .hmcon-1 .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .howmany .hmcon-2 {
@@ -479,18 +496,36 @@ body main .newbook {
 }
 
 body main .newbook .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
 }
 
 body main .newbook .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
   text-align: center;
+}
+
+body main .newbook .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .newbook .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .newbook ul {
@@ -510,17 +545,6 @@ body main .newbook ul li {
   position: relative;
   width: 20%;
   margin: 0 5px;
-}
-
-body main .newbook ul li:nth-of-type(1)::before {
-  position: absolute;
-  right: 5px;
-  top: 8%;
-  content: '2권';
-  font-size: 12px;
-  text-align: center;
-  color: #777;
-  z-index: 30;
 }
 
 body main .newbook ul li img {
@@ -557,18 +581,36 @@ body main .bestseller {
 }
 
 body main .bestseller .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
 }
 
 body main .bestseller .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
   text-align: center;
+}
+
+body main .bestseller .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .bestseller .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .bestseller .minititle {
@@ -612,7 +654,7 @@ body main .bestseller .besttab p {
   text-align: center;
 }
 
-body main .bestseller .besttab p:nth-of-type(1) {
+body main .bestseller .besttab p.active {
   background: #333;
   color: white;
 }
@@ -628,23 +670,13 @@ body main .bestseller .bstlist {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  display: none;
 }
 
 body main .bestseller .bstlist li {
   position: relative;
   width: 20%;
   margin: 0 5px;
-}
-
-body main .bestseller .bstlist li:nth-of-type(1)::before {
-  position: absolute;
-  right: 5px;
-  top: 8%;
-  content: '2권';
-  font-size: 12px;
-  text-align: center;
-  color: #777;
-  z-index: 30;
 }
 
 body main .bestseller .bstlist li img {
@@ -672,24 +704,10 @@ body main .bestseller .bstlist li .bookdtl span {
   font-size: 16px;
 }
 
-body main .bestseller .bst-2 {
-  display: none;
-}
-
-body main .bestseller .bst-3 {
-  display: none;
-}
-
-body main .bestseller .bst-4 {
-  display: none;
-}
-
-body main .bestseller .bst-5 {
-  display: none;
-}
-
-body main .bestseller .bst-6 {
-  display: none;
+body main .bestseller .bstlist.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body main .rofan {
@@ -715,18 +733,36 @@ body main .rofan {
 }
 
 body main .rofan .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
 }
 
 body main .rofan .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
   text-align: center;
+}
+
+body main .rofan .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .rofan .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .rofan ul {
@@ -746,17 +782,6 @@ body main .rofan ul li {
   position: relative;
   width: 20%;
   margin: 0 5px;
-}
-
-body main .rofan ul li:nth-of-type(1)::before {
-  position: absolute;
-  right: 5px;
-  top: 8%;
-  content: '2권';
-  font-size: 12px;
-  text-align: center;
-  color: #777;
-  z-index: 30;
 }
 
 body main .rofan ul li img {
@@ -806,18 +831,36 @@ body main .time {
 }
 
 body main .time .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
 }
 
 body main .time .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
   text-align: center;
+}
+
+body main .time .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .time .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .time figure {
@@ -889,18 +932,36 @@ body main .bookcase {
 }
 
 body main .bookcase .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
 }
 
 body main .bookcase .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
   text-align: center;
+}
+
+body main .bookcase .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .bookcase .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .bookcase ul {
@@ -959,16 +1020,34 @@ body main .free {
 }
 
 body main .free .frcon-1 .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
 }
 
 body main .free .frcon-1 .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
+}
+
+body main .free .frcon-1 .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .free .frcon-1 .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .free .frcon-2 ul li {
@@ -1032,7 +1111,7 @@ body main .function nav div p {
   margin-top: 10px;
 }
 
-body main .function nav div:nth-of-type(1) {
+body main .function nav div.active {
   background: #F6F6F6;
 }
 
@@ -1045,19 +1124,22 @@ body main .function .conall {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  display: none;
 }
 
-body main .function .conall div > img {
+body main .function .conall div img {
   width: 50px;
   margin: 30px 0;
 }
 
 body main .function .conall div .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
 }
 
 body main .function .conall div .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
@@ -1065,11 +1147,27 @@ body main .function .conall div .detail {
   line-height: 1.5;
 }
 
-body main .function .conall .minitab {
-  margin-top: 30%;
+body main .function .conall div .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
-body main .function .conall .minitab .detail {
+body main .function .conall div .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .function .conall div .minitab {
+  margin-top: 100px;
+}
+
+body main .function .conall div .minitab .detail2 {
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
@@ -1077,7 +1175,7 @@ body main .function .conall .minitab .detail {
   line-height: 1.5;
 }
 
-body main .function .conall .minitab ul {
+body main .function .conall div .minitab ul {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1087,7 +1185,7 @@ body main .function .conall .minitab ul {
           justify-content: flex-start;
 }
 
-body main .function .conall .minitab ul li {
+body main .function .conall div .minitab ul li {
   cursor: pointer;
   padding: 3px 18px;
   background: #F6F6F6;
@@ -1097,7 +1195,7 @@ body main .function .conall .minitab ul li {
   margin-right: 10px;
 }
 
-body main .function .conall .minitab ul li:nth-of-type(1) {
+body main .function .conall div .minitab ul li:nth-of-type(1) {
   background: #333;
   color: white;
 }
@@ -1133,12 +1231,10 @@ body main .function .conall .cellphone .frame {
   border-radius: 0px;
 }
 
-body main .function .con2 {
-  display: none;
-}
-
-body main .function .con3 {
-  display: none;
+body main .function .conall.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body main .story {
@@ -1193,16 +1289,34 @@ body main .story .strcon-2 {
 }
 
 body main .story .strcon-2 .title {
+  opacity: 0;
   font-size: 50px;
   font-weight: 900;
 }
 
 body main .story .strcon-2 .detail {
+  opacity: 0;
   margin-top: 25px;
   font-size: 22px;
   font-weight: 400;
   color: #555;
   line-height: 1.5;
+}
+
+body main .story .strcon-2 .title.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
+}
+
+body main .story .strcon-2 .detail.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a1 1.5s alternate;
+          animation: a1 1.5s alternate;
 }
 
 body main .faq {
@@ -1615,21 +1729,21 @@ body footer article ul li {
     margin: 25px auto 0;
     font-size: 16px;
   }
-  body main .function .conall .minitab {
+  body main .function .conall div .minitab {
     margin-top: 20px;
   }
-  body main .function .conall .minitab .detail {
+  body main .function .conall div .minitab .detail2 {
     margin: 10px auto 0;
     font-size: 16px;
     padding: 0;
   }
-  body main .function .conall .minitab ul {
+  body main .function .conall div .minitab ul {
     margin-top: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body main .function .conall .minitab ul li {
+  body main .function .conall div .minitab ul li {
     margin: 0;
     padding: 3px 18px;
   }
@@ -1897,7 +2011,7 @@ body footer article ul li {
   body main .function nav div {
     width: 100%;
   }
-  body main .function .conall .minitab .detail {
+  body main .function .conall div .minitab .detail2 {
     font-size: 18px;
   }
   body main .function .conall .cellphone {

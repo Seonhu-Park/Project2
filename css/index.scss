@@ -1,3 +1,4 @@
+@charset "uft-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
 
 //MEMO 공통 
@@ -31,6 +32,8 @@ input:focus{outline:none;}
     margin-right:10px;
 }
 @mixin a1(){
+    transition:1.5s;
+    opacity:1;
     animation: a1 1.5s alternate;
 }
 @keyframes a1 {
@@ -178,8 +181,6 @@ body{
                     @include title();
                 }
                 .title.scrFnc{
-                    transition:1s;
-                    opacity:1;
                     @include a1();
                 }
                 .detail{
@@ -187,8 +188,6 @@ body{
                     @include detail();
                 }
                 .detail.scrFnc{
-                    transition:1s;
-                    opacity:1;
                     @include a1();
                 }
             }
@@ -231,10 +230,18 @@ body{
             align-items: center;
             .hmcon-1{
                 .title{
+                    opacity: 0;
                     @include title();
                 }
+                .title.scrFnc{
+                    @include a1();
+                }
                 .detail{
+                    opacity: 0;
                     @include detail();
+                }
+                .detail.scrFnc{
+                    @include a1();
                 }
             }
             .hmcon-2{
@@ -330,12 +337,20 @@ body{
             justify-content: center;
             align-items: center;
             .title{
+                opacity: 0;
                 @include title();
                 text-align: center;
             }
             .detail{
+                opacity: 0;
                 @include detail();
                 text-align: center;
+            }
+            .title.scrFnc{
+                @include a1();
+            }
+            .detail.scrFnc{
+                @include a1();
             }
             ul{
                 margin-top:80px;
@@ -346,15 +361,6 @@ body{
                     position: relative;
                     width:20%;
                     margin:0 5px;
-                    &:nth-of-type(1)::before{
-                        position:absolute;
-                        right:5px; top:8%;
-                        content:'2권';
-                        font-size: 12px;
-                        text-align: center;
-                        color:#777;
-                        z-index: 30;
-                    }
                     img{
                         box-shadow: 0 0 5px rgba(0,0,0,0.2);
                         border-radius: 0 10px 10px 0;
@@ -385,12 +391,20 @@ body{
             background:#fff;
             padding: 100px 10%;
             .title{
+                opacity: 0;
                 @include title();
                 text-align: center;
             }
             .detail{
+                opacity: 0;
                 @include detail();
                 text-align: center;
+            }
+            .title.scrFnc{
+                @include a1();
+            }
+            .detail.scrFnc{
+                @include a1();
             }
             .minititle{
                 margin-top:30px;
@@ -419,10 +433,10 @@ body{
                     font-size: 14px;
                     margin-right:10px;
                     text-align: center;
-                    &:nth-of-type(1){
-                        background:#333;
-                        color:white;
-                    }
+                }
+                p.active{
+                    background:#333;
+                    color:white;
                 }
             }
             .bstlist{
@@ -430,19 +444,11 @@ body{
                 display:flex;
                 justify-content: space-between;
                 align-items: flex-end;
+                display:none;
                 li{
                     position: relative;
                     width:20%;
                     margin:0 5px;
-                    &:nth-of-type(1)::before{
-                        position:absolute;
-                        right:5px; top:8%;
-                        content:'2권';
-                        font-size: 12px;
-                        text-align: center;
-                        color:#777;
-                        z-index: 30;
-                    }
                     img{
                         box-shadow: 0 0 5px rgba(0,0,0,0.2);
                         border-radius: 0 10px 10px 0;
@@ -465,21 +471,8 @@ body{
                     }
                 }
             }
-            .bst-1{}
-            .bst-2{
-                display:none;
-            }
-            .bst-3{
-                display:none;
-            }
-            .bst-4{
-                display:none;
-            }
-            .bst-5{
-                display:none;
-            }
-            .bst-6{
-                display:none;
+            .bstlist.active{
+                display:flex;
             }
         }
         //MEMO 판타지 로맨스 
@@ -494,12 +487,20 @@ body{
             justify-content: center;
             align-items: center;
             .title{
+                opacity: 0;
                 @include title();
                 text-align: center;
             }
             .detail{
+                opacity: 0;
                 @include detail();
                 text-align: center;
+            }
+            .title.scrFnc{
+                @include a1();
+            }
+            .detail.scrFnc{
+                @include a1();
             }
             ul{
                 margin-top:80px;
@@ -510,15 +511,6 @@ body{
                     position: relative;
                     width:20%;
                     margin:0 5px;
-                    &:nth-of-type(1)::before{
-                        position:absolute;
-                        right:5px; top:8%;
-                        content:'2권';
-                        font-size: 12px;
-                        text-align: center;
-                        color:#777;
-                        z-index: 30;
-                    }
                     img{
                         box-shadow: 0 0 5px rgba(0,0,0,0.2);
                         border-radius: 0 10px 10px 0;
@@ -553,12 +545,20 @@ body{
             justify-content: center;
             align-items: center;
             .title{
+                opacity: 0;
                 @include title();
                 text-align: center;
             }
             .detail{
+                opacity: 0;
                 @include detail();
                 text-align: center;
+            }
+            .title.scrFnc{
+                @include a1();
+            }
+            .detail.scrFnc{
+                @include a1();
             }
             figure{
                 position: relative;
@@ -606,12 +606,20 @@ body{
             justify-content: center;
             align-items: center;
             .title{
+                opacity: 0;
                 @include title();
                 text-align: center;
             }
             .detail{
+                opacity: 0;
                 @include detail();
                 text-align: center;
+            }
+            .title.scrFnc{
+                @include a1();
+            }
+            .detail.scrFnc{
+                @include a1();
             }
             ul{
                 margin-top:50px;
@@ -650,10 +658,18 @@ body{
             align-items: center;
             .frcon-1{
                 .title{
+                    opacity: 0;
                     @include title();
                 }
                 .detail{
+                    opacity: 0;
                     @include detail();
+                }
+                .title.scrFnc{
+                    @include a1();
+                }
+                .detail.scrFnc{
+                    @include a1();
                 }
             }
             .frcon-2{
@@ -699,9 +715,9 @@ body{
                         font-size:14px;
                         margin-top:10px;
                     }
-                    &:nth-of-type(1){
-                        background:#F6F6F6;
-                    }
+                }
+                div.active{
+                    background:#F6F6F6;
                 }
             }
             .conall{
@@ -709,32 +725,41 @@ body{
                 padding:50px 10% 100px;
                 display:flex;
                 justify-content: space-between;
+                display:none;
                 div{
-                    > img{
+                    img{
                         width:50px;
                         margin:30px 0;
                     }
                     .title{
+                        opacity: 0;
                         @include title();
                     }
                     .detail{
+                        opacity: 0;
                         @include detail();
                     }
-                }
-                .minitab{
-                    margin-top:30%;
-                    .detail{
-                        @include detail();
+                    .title.scrFnc{
+                        @include a1();
                     }
-                    ul{
-                        margin-top:25px;
-                        display:flex;
-                        justify-content: flex-start;
-                        li{
-                            @include roundBtn();
-                            &:nth-of-type(1){
-                                background: #333;
-                                color:white;
+                    .detail.scrFnc{
+                        @include a1();
+                    }
+                    .minitab{
+                        margin-top:100px;
+                        .detail2{
+                            @include detail();
+                        }
+                        ul{
+                            margin-top:25px;
+                            display:flex;
+                            justify-content: flex-start;
+                            li{
+                                @include roundBtn();
+                                &:nth-of-type(1){
+                                    background: #333;
+                                    color:white;
+                                }
                             }
                         }
                     }
@@ -761,14 +786,8 @@ body{
                     }
                 }
             }
-            .con1{
-                // display:none;
-            }
-            .con2{
-                display:none;
-            }
-            .con3{
-                display:none;
+            .conall.active{
+                display:flex;
             }
         }
         //MEMO 구독자 스토리 
@@ -805,10 +824,18 @@ body{
                 position:absolute;
                 right:15%; top:15%;
                 .title{
+                    opacity: 0;
                     @include title();
                 }
                 .detail{
+                    opacity: 0;
                     @include detail();
+                }
+                .title.scrFnc{
+                    @include a1();
+                }
+                .detail.scrFnc{
+                    @include a1();
                 }
             }
         }
@@ -1166,20 +1193,20 @@ body{
                             margin:25px auto 0;
                             font-size:16px;
                         }
-                    }
-                    .minitab{
-                        margin-top:20px;
-                        .detail{
-                            margin:10px auto 0;
-                            font-size:16px;
-                            padding:0;
-                        }
-                        ul{
+                        .minitab{
                             margin-top:20px;
-                            justify-content: space-between;
-                            li{
-                                margin:0;
-                                padding:3px 18px;
+                            .detail2{
+                                margin:10px auto 0;
+                                font-size:16px;
+                                padding:0;
+                            }
+                            ul{
+                                margin-top:20px;
+                                justify-content: space-between;
+                                li{
+                                    margin:0;
+                                    padding:3px 18px;
+                                }
                             }
                         }
                     }
@@ -1447,10 +1474,10 @@ body{
                 .conall{
                     div{
                         > img{}
-                    }
-                    .minitab{
-                        .detail{
-                            font-size:18px;
+                        .minitab{
+                            .detail2{
+                                font-size:18px;
+                            }
                         }
                     }
                     .cellphone{

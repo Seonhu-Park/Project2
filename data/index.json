@@ -1,0 +1,330 @@
+{
+    "newbook":[
+        {
+            "bookimg":"img/newbook/newbook-1.jpg",
+            "title":"달러구트 꿈 백화점 2",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/newbook/newbook-2.jpg",
+            "title":"디즈니의 악당들 6:개를 훔친 이웃집 여자",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/newbook/newbook-3.jpg",
+            "title":"애매한 재능",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/newbook/newbook-4.jpg",
+            "title":"마흔 이후 멋지게 나이 들고 싶습니다",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/newbook/newbook-5.jpg",
+            "title":"인생은 엇나가야 제맛",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/newbook/newbook-6.jpg",
+            "title":"이효진의 특별한 아메리칸 홈베이킹",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/newbook/newbook-7.jpg",
+            "title":"입시를 알면 아이공부가 쉬워진다",
+            "time":"47% | 243분"
+        }
+    ],
+    "best1":[
+        {
+            "bookimg":"img/bestbook/total/1.jpg",
+            "title":"구미호 식당",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/bestbook/total/2.jpg",
+            "title":"구의 증명",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/bestbook/total/3.jpg",
+            "title":"불편한 편의점",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/total/4.jpg",
+            "title":"오즈의 의류수거함",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/total/5.jpg",
+            "title":"썬킴의 거침없는 세계사",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/total/6.jpg",
+            "title":"천 개의 파랑",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/total/7.jpg",
+            "title":"달러구트 꿈 백화점",
+            "time":"47% | 243분"
+        }
+    ],
+    "best2":[
+        {
+            "bookimg":"img/bestbook/trend/1.jpg",
+            "title":"부의 추월차선",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/bestbook/trend/2.jpg",
+            "title":"크래프톤 웨이",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/bestbook/trend/3.jpg",
+            "title":"월급쟁이 부자로 은퇴하라",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/trend/4.jpg",
+            "title":"돈의 속성",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/trend/5.jpg",
+            "title":"메타버스",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/trend/6.jpg",
+            "title":"주린이가 가장 알고 싶은 최다질문",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/trend/7.jpg",
+            "title":"아들아, 돈 공부 해야 한다",
+            "time":"47% | 243분"
+        }
+    ],
+    "best3":[
+        {
+            "bookimg":"img/bestbook/life/1.jpg",
+            "title":"천재의 식단",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/bestbook/life/2.jpg",
+            "title":"오늘부터 수승화강",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/bestbook/life/3.jpg",
+            "title":"다이어트 불변의 법칙",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/life/4.jpg",
+            "title":"부모와 아이 중 한 사람은 어른이어야 한다",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/life/5.jpg",
+            "title":"식물과 같이 살고 있습니다",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/life/6.jpg",
+            "title":"밤의 숨소리",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/life/7.jpg",
+            "title":"송일준PD 제주도 한 달 살기",
+            "time":"47% | 243분"
+        }
+    ],
+    "best4":[
+        {
+            "bookimg":"img/bestbook/healing/1.jpg",
+            "title":"오늘은 이만 좀 쉴게요",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/bestbook/healing/2.jpg",
+            "title":"그러라 그래",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/bestbook/healing/3.jpg",
+            "title":"끝까지 남겨두는 그 마음",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/healing/4.jpg",
+            "title":"그런 사람 또 없습니다",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/healing/5.jpg",
+            "title":"작은 별이지만 빛나고 있어",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/healing/6.jpg",
+            "title":"너에게 하고 싶은 말",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/healing/7.jpg",
+            "title":"그게 너였으면 좋겠다",
+            "time":"47% | 243분"
+        }
+    ],
+    "best5":[
+        {
+            "bookimg":"img/bestbook/knowledge/1.jpg",
+            "title":"꼬리에 꼬리를 무는 그날 이야기",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/bestbook/knowledge/2.jpg",
+            "title":"썬킴의 거침없는 세계사",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/bestbook/knowledge/3.jpg",
+            "title":"내 마음을 나도 모를 때",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/knowledge/4.jpg",
+            "title":"공정한 경쟁",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/knowledge/5.jpg",
+            "title":"방구석 미술관",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/knowledge/6.jpg",
+            "title":"잘될 운명으로 가는 운의 알고리즘",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/knowledge/7.jpg",
+            "title":"미라클모닝",
+            "time":"47% | 243분"
+        }
+    ],
+    "best6":[
+        {
+            "bookimg":"img/bestbook/novel/1.jpg",
+            "title":"구미호 식당",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/bestbook/novel/2.jpg",
+            "title":"구의 증명",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/bestbook/novel/3.jpg",
+            "title":"불편한 편의점",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/novel/4.jpg",
+            "title":"오즈의 의류수거함",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/novel/5.jpg",
+            "title":"천 개의 파랑",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/novel/6.jpg",
+            "title":"달러구트 꿈 백화점",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/bestbook/novel/7.jpg",
+            "title":"우리가 빛의 속도로 갈 수 있다면",
+            "time":"47% | 243분"
+        }
+    ],
+    "rofan":[
+        {
+            "bookimg":"img/rofanbook/1.jpg",
+            "title":"Npc로 각성한 헌터",
+            "time":"54% | 246분"
+        },
+        {
+            "bookimg":"img/rofanbook/2.jpg",
+            "title":"세이브 미",
+            "time":"62% | 162분"
+        },
+        {
+            "bookimg":"img/rofanbook/3.jpg",
+            "title":"천룡팔부",
+            "time":"41% | 137분"
+        }
+        ,
+        {
+            "bookimg":"img/rofanbook/4.jpg",
+            "title":"만나러 갈게",
+            "time":"44% | 116분"
+        }
+        ,
+        {
+            "bookimg":"img/rofanbook/5.jpg",
+            "title":"고은 나의 고은",
+            "time":"54% | 246분"
+        }
+        ,
+        {
+            "bookimg":"img/rofanbook/6.jpg",
+            "title":"일교차",
+            "time":"48% | 17분"
+        }
+        ,
+        {
+            "bookimg":"img/rofanbook/7.jpg",
+            "title":"슬기로운 회귀생활",
+            "time":"47% | 243분"
+        }
+    ]
+}
