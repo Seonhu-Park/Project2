@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
+  outline: none;
 }
 
 li {
@@ -566,6 +567,7 @@ body main .newbook .detail.scrFnc {
 }
 
 body main .newbook ul {
+  width: 100%;
   margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,6 +699,7 @@ body main .bestseller .besttab p.active {
 }
 
 body main .bestseller .bstlist {
+  width: 100%;
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -803,6 +806,7 @@ body main .rofan .detail.scrFnc {
 }
 
 body main .rofan ul {
+  width: 100%;
   margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1785,6 +1789,29 @@ body footer article ul li {
   body main .howmany .hmcon-2 .bar3 {
     height: 95%;
   }
+  body main .howmany .hmcon-2 .bar3.scrFnc {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    opacity: 1;
+    -webkit-animation: a2-1 1.5s alternate;
+            animation: a2-1 1.5s alternate;
+  }
+  @-webkit-keyframes a2-1 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 95%;
+    }
+  }
+  @keyframes a2-1 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 95%;
+    }
+  }
   body main .howmany .hmcon-2 img {
     left: 5%;
     top: 20%;
@@ -1804,6 +1831,7 @@ body footer article ul li {
     font-size: 16px;
   }
   body main .newbook ul {
+    width: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1841,14 +1869,20 @@ body footer article ul li {
   }
   body main .bestseller .besttab {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 30px 0 0 0;
   }
   body main .bestseller .besttab p {
     padding: 5px 12px;
+    margin-right: 10px;
+  }
+  body main .bestseller .besttab p:last-child {
     margin-right: 0px;
+  }
+  body main .bestseller .bstlist {
+    width: 100%;
   }
   body main .bestseller .bstlist li {
     width: 28vw;
@@ -1923,6 +1957,98 @@ body footer article ul li {
     width: 40%;
     right: 0%;
     top: -30%;
+  }
+  body main .time figure #rdtm1.scrFnc {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    opacity: 1;
+    -webkit-animation: rd1 2s alternate;
+            animation: rd1 2s alternate;
+  }
+  @-webkit-keyframes rd1 {
+    0% {
+      top: -20%;
+    }
+    100% {
+      top: -60%;
+    }
+  }
+  @keyframes rd1 {
+    0% {
+      top: -20%;
+    }
+    100% {
+      top: -60%;
+    }
+  }
+  body main .time figure #rdtm2.scrFnc {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    opacity: 1;
+    -webkit-animation: rd2 2.5s alternate;
+            animation: rd2 2.5s alternate;
+  }
+  @-webkit-keyframes rd2 {
+    0% {
+      top: -5%;
+    }
+    100% {
+      top: -15%;
+    }
+  }
+  @keyframes rd2 {
+    0% {
+      top: -5%;
+    }
+    100% {
+      top: -15%;
+    }
+  }
+  body main .time figure #rdtm3.scrFnc {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    opacity: 1;
+    -webkit-animation: rd3 1.5s alternate;
+            animation: rd3 1.5s alternate;
+  }
+  @-webkit-keyframes rd3 {
+    0% {
+      top: -60%;
+    }
+    100% {
+      top: -80%;
+    }
+  }
+  @keyframes rd3 {
+    0% {
+      top: -60%;
+    }
+    100% {
+      top: -80%;
+    }
+  }
+  body main .time figure #rdtm4.scrFnc {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    opacity: 1;
+    -webkit-animation: rd4 3s alternate;
+            animation: rd4 3s alternate;
+  }
+  @-webkit-keyframes rd4 {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: -30%;
+    }
+  }
+  @keyframes rd4 {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: -30%;
+    }
   }
   body main .bookcase {
     padding: 50px 0%;
@@ -2027,10 +2153,14 @@ body footer article ul li {
     padding: 3px 18px;
   }
   body main .function .conall .cellphone {
+    margin-top: 30px;
     width: 200px;
   }
   body main .function .conall .cellphone > img {
     border-radius: 35px;
+  }
+  body main .function .conall.active {
+    padding: 50px 10% 200px;
   }
   body main .story {
     height: 80vh;
@@ -2178,11 +2308,34 @@ body footer article ul li {
   body main .howmany .hmcon-2 .bar3 {
     height: 95%;
   }
+  body main .howmany .hmcon-2 .bar3.scrFnc {
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+    opacity: 1;
+    -webkit-animation: a2-1 1.5s alternate;
+            animation: a2-1 1.5s alternate;
+  }
+  @-webkit-keyframes a2-1 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 95%;
+    }
+  }
+  @keyframes a2-1 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 95%;
+    }
+  }
   body main .howmany .hmcon-2 img {
     right: -45%;
   }
   body main .newbook {
-    padding: 100px 5%;
+    padding: 100px 0%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -2202,7 +2355,7 @@ body footer article ul li {
     width: 20vw;
   }
   body main .bestseller {
-    padding: 100px 5%;
+    padding: 100px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2225,19 +2378,30 @@ body footer article ul li {
   }
   body main .bestseller .minititle {
     width: 90vw;
+    margin: 0 auto;
   }
   body main .bestseller .besttab {
-    width: 100%;
+    width: 90%;
+    margin: 60px auto 30px;
   }
   body main .bestseller .besttab p {
     padding: 5px 12px;
     margin-right: 10px;
   }
+  body main .bestseller .bstlist {
+    width: 100%;
+  }
   body main .bestseller .bstlist li {
     width: 20vw;
   }
+  body main .bestseller .bstlist li:nth-of-type(1) {
+    margin-left: 5vw;
+  }
+  body main .bestseller .bstlist li:nth-of-type(7) {
+    margin-right: 5vw;
+  }
   body main .rofan {
-    padding: 100px 5%;
+    padding: 100px 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -2247,6 +2411,9 @@ body footer article ul li {
   }
   body main .rofan .detail {
     margin: 25px auto 0;
+  }
+  body main .rofan ul {
+    width: 100%;
   }
   body main .rofan ul li {
     width: 20vw;
@@ -2332,6 +2499,9 @@ body footer article ul li {
   }
   body main .function nav div {
     width: 20%;
+  }
+  body main .function .conall.active {
+    padding: 50px 20% 100px;
   }
   body main .story {
     height: 30vw;

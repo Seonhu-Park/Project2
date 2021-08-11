@@ -139,6 +139,21 @@ function init(){
         elBsCon[5].innerHTML = tagList6;
         elNbUl.innerHTML = newList;
         elRfUl.innerHTML = rofanList;
+
+        bsTabFnc();
+        $('.multiple-items').slick({
+            infinite: false,
+            slidesToShow: 7,
+            slidesToScroll: 2,
+            responsive:[
+                {
+                    breakpoint: 1200,
+                    settings : {
+                        slidesToShow: 4.5
+                    }
+                }
+            ]
+          });
     }
 
 
@@ -310,7 +325,7 @@ function init(){
             scrollevent(elFnc,elFncTit[i],elFncDet[i]);
         };
     });
-    bsTabFnc();
+    
     fncTabFnc();
     faqSlide();
     youtube();

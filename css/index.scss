@@ -6,6 +6,7 @@
 *{
     padding:0; margin:0;
     font-family: 'Noto Sans KR', sans-serif;
+    outline: none;
 }
 li{list-style: none;}
 a{text-decoration: none;}
@@ -366,6 +367,7 @@ body{
                 @include a1();
             }
             ul{
+                width:100%;
                 margin-top:80px;
                 display:flex;
                 justify-content: space-between;
@@ -453,6 +455,7 @@ body{
                 }
             }
             .bstlist{
+                width:100%;
                 margin-top:15px;
                 display:flex;
                 justify-content: space-between;
@@ -516,6 +519,7 @@ body{
                 @include a1();
             }
             ul{
+                width:100%;
                 margin-top:80px;
                 display:flex;
                 justify-content: space-between;
@@ -1095,6 +1099,15 @@ body{
                     .bar3{
                         height:95%;
                     }
+                    .bar3.scrFnc{
+                        transition:1.5s;
+                        opacity:1;
+                        animation: a2-1 1.5s alternate;
+                    }
+                    @keyframes a2-1 {
+                        0%{height:0;}
+                        100%{height:95%;}
+                    }
                     img{
                         left:5%; top:20%;
                     }
@@ -1112,6 +1125,7 @@ body{
                     font-size:16px;
                 }
                 ul{
+                    width:100%;
                     justify-content: flex-start;
                     margin-top:50px;
                     li{
@@ -1138,14 +1152,18 @@ body{
                 }
                 .besttab{
                     width:100%;
-                    justify-content: space-between;
+                    justify-content: center;
                     margin: 30px 0 0 0;
                     p{
                         padding:5px 12px;
-                        margin-right:0px;
+                        margin-right:10px;
+                        &:last-child{
+                            margin-right:0px;
+                        }
                     }
                 }
                 .bstlist{
+                    width:100%;
                     li{
                         width:28vw;
                     }
@@ -1210,6 +1228,42 @@ body{
                             width:40%;
                             right:0%; top:-30%;
                         }
+                    }
+                    #rdtm1.scrFnc{
+                        transition:1.5s;
+                        opacity:1;
+                        animation: rd1 2s alternate;
+                    }
+                    @keyframes rd1 {
+                        0%{top:-20%;}
+                        100%{top:-60%;}
+                    }
+                    #rdtm2.scrFnc{
+                        transition:1.5s;
+                        opacity:1;
+                        animation: rd2 2.5s alternate;
+                    }
+                    @keyframes rd2 {
+                        0%{top:-5%;}
+                        100%{top:-15%;}
+                    }
+                    #rdtm3.scrFnc{
+                        transition:1.5s;
+                        opacity:1;
+                        animation: rd3 1.5s alternate;
+                    }
+                    @keyframes rd3 {
+                        0%{top:-60%;}
+                        100%{top:-80%;}
+                    }
+                    #rdtm4.scrFnc{
+                        transition:1.5s;
+                        opacity:1;
+                        animation: rd4 3s alternate;
+                    }
+                    @keyframes rd4 {
+                        0%{top:-10%;}
+                        100%{top:-30%;}
                     }
                 }
             }
@@ -1310,11 +1364,15 @@ body{
                         }
                     }
                     .cellphone{
+                        margin-top:30px;
                         width:200px;
                         > img{
                             border-radius: 35px;
                         }
                     }
+                }
+                .conall.active{
+                    padding:50px 10% 200px;
                 }
             }
             .story{
@@ -1457,13 +1515,22 @@ body{
                     .bar3{
                         height:95%;
                     }
+                    .bar3.scrFnc{
+                        transition:1.5s;
+                        opacity:1;
+                        animation: a2-1 1.5s alternate;
+                    }
+                    @keyframes a2-1 {
+                        0%{height:0;}
+                        100%{height:95%;}
+                    }
                     img{
                         right:-45%;
                     }
                 }
             }
             .newbook{
-                padding: 100px 5%;
+                padding: 100px 0%;
                 align-items: flex-start;
                 .title{
                     margin:0 auto;
@@ -1479,7 +1546,7 @@ body{
                 }
             }
             .bestseller{
-                padding:100px 5%;
+                padding:100px 0;
                 display:flex;
                 flex-direction: column;
                 justify-content: center;
@@ -1492,22 +1559,31 @@ body{
                 }
                 .minititle{
                     width:90vw;
+                    margin:0 auto;
                 }
                 .besttab{
-                    width:100%;
+                    width:90%;
+                    margin:60px auto 30px;
                     p{
                         padding:5px 12px;
                         margin-right:10px;
                     }
                 }
                 .bstlist{
+                    width:100%;
                     li{
                         width:20vw;
+                        &:nth-of-type(1){
+                            margin-left:5vw;
+                        }
+                        &:nth-of-type(7){
+                            margin-right: 5vw;
+                        }
                     }
                 }
             }
             .rofan{
-                padding: 100px 5%;
+                padding: 100px 0;
                 align-items: flex-start;
                 .title{
                     margin:0 auto;
@@ -1516,6 +1592,7 @@ body{
                     margin:25px auto 0;
                 }
                 ul{
+                    width:100%;
                     li{
                         width:20vw;
                     }
@@ -1628,7 +1705,8 @@ body{
                     width:20%;
                 }
             }
-            .conall{
+            .conall.active{
+                padding:50px 20% 100px;
             }
         }
         .story{
