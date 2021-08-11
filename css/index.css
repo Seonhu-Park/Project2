@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
 @import url("slick.css");
 * {
   padding: 0;
@@ -12,6 +12,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+img {
+  border: none;
 }
 
 input:focus {
@@ -94,6 +98,8 @@ body header {
   padding: 0 2%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 body header figure {
@@ -470,6 +476,32 @@ body main .howmany .hmcon-2 .bar3 p {
   font-size: 14px;
   text-align: center;
   font-weight: 900;
+}
+
+body main .howmany .hmcon-2 .bar3.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: a2 1.5s alternate;
+          animation: a2 1.5s alternate;
+}
+
+@-webkit-keyframes a2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 250px;
+  }
+}
+
+@keyframes a2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 250px;
+  }
 }
 
 body main .howmany .hmcon-2 img {
@@ -891,6 +923,7 @@ body main .time figure img:nth-of-type(3) {
   width: 50%;
   left: -60%;
   top: 10%;
+  opacity: 0;
 }
 
 body main .time figure img:nth-of-type(4) {
@@ -898,6 +931,7 @@ body main .time figure img:nth-of-type(4) {
   width: 50%;
   left: -70%;
   top: 50%;
+  opacity: 0;
 }
 
 body main .time figure img:nth-of-type(5) {
@@ -905,6 +939,7 @@ body main .time figure img:nth-of-type(5) {
   width: 50%;
   right: -60%;
   top: 10%;
+  opacity: 0;
 }
 
 body main .time figure img:nth-of-type(6) {
@@ -912,6 +947,111 @@ body main .time figure img:nth-of-type(6) {
   width: 50%;
   right: -70%;
   top: 50%;
+  opacity: 0;
+}
+
+body main .time figure #rdtm1.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: rd1 1.5s alternate;
+          animation: rd1 1.5s alternate;
+}
+
+@-webkit-keyframes rd1 {
+  0% {
+    top: 40%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes rd1 {
+  0% {
+    top: 40%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+body main .time figure #rdtm2.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: rd2 2s alternate;
+          animation: rd2 2s alternate;
+}
+
+@-webkit-keyframes rd2 {
+  0% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes rd2 {
+  0% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+body main .time figure #rdtm3.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: rd3 2.5s alternate;
+          animation: rd3 2.5s alternate;
+}
+
+@-webkit-keyframes rd3 {
+  0% {
+    top: 40%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes rd3 {
+  0% {
+    top: 40%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+
+body main .time figure #rdtm4.scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: rd4 3s alternate;
+          animation: rd4 3s alternate;
+}
+
+@-webkit-keyframes rd4 {
+  0% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes rd4 {
+  0% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
+  }
 }
 
 body main .bookcase {
@@ -986,6 +1126,18 @@ body main .bookcase ul li {
           align-items: flex-start;
 }
 
+body main .bookcase ul li:nth-of-type(1) {
+  opacity: 0;
+}
+
+body main .bookcase ul li:nth-of-type(2) {
+  opacity: 0;
+}
+
+body main .bookcase ul li:nth-of-type(3) {
+  opacity: 0;
+}
+
 body main .bookcase ul li img {
   width: 100%;
 }
@@ -1005,6 +1157,96 @@ body main .bookcase ul li:nth-of-type(2) .case {
 
 body main .bookcase ul li:nth-of-type(3) .case {
   right: 5%;
+}
+
+body main .bookcase ul li:nth-of-type(1).scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: li1 1.5s alternate;
+          animation: li1 1.5s alternate;
+}
+
+@-webkit-keyframes li1 {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes li1 {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+body main .bookcase ul li:nth-of-type(2).scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: li2 2.5s alternate;
+          animation: li2 2.5s alternate;
+}
+
+@-webkit-keyframes li2 {
+  0% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes li2 {
+  0% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+body main .bookcase ul li:nth-of-type(3).scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: li3 3s alternate;
+          animation: li3 3s alternate;
+}
+
+@-webkit-keyframes li3 {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes li3 {
+  0% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 body main .free {
@@ -1065,6 +1307,56 @@ body main .free .frcon-2 ul li {
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 1.5;
+  opacity: 0;
+}
+
+body main .free .frcon-2 ul li:nth-of-type(1).scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: frli 1.5s alternate;
+          animation: frli 1.5s alternate;
+}
+
+@-webkit-keyframes frli {
+  0% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes frli {
+  0% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+body main .free .frcon-2 ul li:nth-of-type(2).scrFnc {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-animation: frli 1.5s alternate;
+          animation: frli 1.5s alternate;
+}
+
+@keyframes frli {
+  0% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 body main .function {
@@ -1122,14 +1414,15 @@ body main .function nav div.active {
 
 body main .function .conall {
   background: #F6F6F6;
-  padding: 50px 10% 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  display: none;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
 }
 
 body main .function .conall div img {
@@ -1185,18 +1478,32 @@ body main .function .conall .cellphone {
   width: 300px;
 }
 
+body main .function .conall .cellphone img {
+  margin: 0;
+}
+
+body main .function .conall .cellphone img:focus {
+  outline: none;
+}
+
+body main .function .conall .cellphone video:focus {
+  outline: none;
+}
+
 body main .function .conall .cellphone .frame {
   width: 100%;
   position: absolute;
   left: -10px;
   top: 0;
   border-radius: 0px;
+  pointer-events: none;
 }
 
 body main .function .conall.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: auto;
+  padding: 50px 10% 100px;
+  visibility: visible;
+  overflow: visible;
 }
 
 body main .story {
@@ -1225,6 +1532,7 @@ body main .story .strcon-1 {
 body main .story .strcon-1 iframe {
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  opacity: 0;
 }
 
 body main .story .strcon-1 > img {
@@ -1338,6 +1646,10 @@ body main .faq ul li .detailall .detail {
   font-weight: 700;
   color: #333;
   line-height: 1.5;
+}
+
+body main .faq ul li .detailall .detail:nth-of-type(2) {
+  cursor: pointer;
 }
 
 body main .faq ul li .answer {

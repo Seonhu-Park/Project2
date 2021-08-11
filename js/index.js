@@ -43,109 +43,106 @@ function init(){
           elBsTab = document.querySelectorAll('.bestseller .besttab p'),
           elBsCon = document.querySelectorAll('.bestseller .bstlist'),
           elFncTab = document.querySelectorAll('.function nav div'),
-          elFncCon = document.querySelectorAll('.function .conall');
+          elFncCon = document.querySelectorAll('.function .conall'),
+          elVdoThm = document.querySelectorAll('.thum');
+    let tagList = '', tagList2 = '', tagList3 = '', tagList4 = '', tagList5 = '', tagList6 = '', newList = '', rofanList = '';
 
 
-        let tagList = '';
-        let tagList2 = '';
-        let tagList3 = '';
-        let tagList4 = '';
-        let tagList5 = '';
-        let tagList6 = '';
-        let newList = '';
-        let rofanList = '';
-        function callback(data){
-            data.best1.forEach(function(v,k){
-                tagList += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            data.best2.forEach(function(v,k){
-                tagList2 += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            data.best3.forEach(function(v,k){
-                tagList3 += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            data.best4.forEach(function(v,k){
-                tagList4 += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            data.best5.forEach(function(v,k){
-                tagList5 += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            data.best6.forEach(function(v,k){
-                tagList6 += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            data.newbook.forEach(function(v,k){
-                newList += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            data.rofan.forEach(function(v,k){
-                rofanList += `<li>
-                <img src="${v.bookimg}">
-                <article class="bookdtl">
-                <h5>${v.title}</h5>
-                <span>${v.time}</span>
-                </article>
-                </li>
-                `;
-            })
-            elBsCon[0].innerHTML = tagList;
-            elBsCon[1].innerHTML = tagList2;
-            elBsCon[2].innerHTML = tagList3;
-            elBsCon[3].innerHTML = tagList4;
-            elBsCon[4].innerHTML = tagList5;
-            elBsCon[5].innerHTML = tagList6;
-            elNbUl.innerHTML = newList;
-            elRfUl.innerHTML = rofanList;
-        }
 
-    
+    //TODO fetch jason 
+    function callback(data){
+        data.best1.forEach(function(v,k){
+            tagList += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        data.best2.forEach(function(v,k){
+            tagList2 += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        data.best3.forEach(function(v,k){
+            tagList3 += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        data.best4.forEach(function(v,k){
+            tagList4 += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        data.best5.forEach(function(v,k){
+            tagList5 += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        data.best6.forEach(function(v,k){
+            tagList6 += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        data.newbook.forEach(function(v,k){
+            newList += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        data.rofan.forEach(function(v,k){
+            rofanList += `<li>
+            <img src="${v.bookimg}">
+            <article class="bookdtl">
+            <h5>${v.title}</h5>
+            <span>${v.time}</span>
+            </article>
+            </li>
+            `;
+        })
+        elBsCon[0].innerHTML = tagList;
+        elBsCon[1].innerHTML = tagList2;
+        elBsCon[2].innerHTML = tagList3;
+        elBsCon[3].innerHTML = tagList4;
+        elBsCon[4].innerHTML = tagList5;
+        elBsCon[5].innerHTML = tagList6;
+        elNbUl.innerHTML = newList;
+        elRfUl.innerHTML = rofanList;
+    }
+
+
+
     //TODO 함수선언 
     function scrollNav(){
         if(window.scrollY >= elVdo.offsetTop){
@@ -171,58 +168,153 @@ function init(){
             detail.classList.remove('scrFnc');
         }
     }; //컨텐츠 스크롤 페이드인 이벤트 
+    function bsTabFnc(){
+        let idx = 0;
+        for(let i=0; i<elBsTab.length; i++){
+            elBsTab[i].addEventListener('click',function(){
+                elBsCon[idx].classList.remove('active');
+                elBsTab[idx].classList.remove('active');
+                elBsCon[i].classList.add('active');
+                elBsTab[i].classList.add('active');
+                idx = i;
+            })
+        };
+    } //베스트셀러 탭 
+    function fncTabFnc(){
+        let idx2 = 0;
+        for(let i=0; i<elFncTab.length; i++){
+            elFncTab[i].addEventListener('click',function(){
+                elFncTab[idx2].classList.remove('active');
+                elFncCon[idx2].classList.remove('active');
+                elFncTab[i].classList.add('active');
+                elFncCon[i].classList.add('active');
+                idx2 = i;
+            })
+        };
+    } //앱 기능 탭
+    function faqSlide(){
+        $('.faq li').on('click',function(){
+            if( $(this).hasClass('active') ){
+                $(this).removeClass('active').find('.answer').stop().slideUp();
+                $(this).find('.detail:nth-of-type(2)').html('⌵');
+                return;
+            }else{
+                $(this).addClass('active').find('.answer').stop().slideDown();
+                $(this).find('.detail:nth-of-type(2)').html('💡');
+            }
+        })
+    } //faq 슬라이드업다운 기능
+    function countNo(){
+            var cnt0 = 0;
+            counterFn();
+            function counterFn() {
+                id0 = setInterval(count0Fn, 10);
+                function count0Fn() {
+                    cnt0+=1250;
+                    if (cnt0 > 100000) {
+                        id0;
+                    } else {
+                        $(".countNo").html(cnt0.toLocaleString());
+                    }
+                }
+            }
+    } //숫자카운트 기능
+    function Howmany(){
+        if(elHm.offsetTop - window.innerHeight + 250 <= window.pageYOffset){
+            elHmTit.classList.add('scrFnc');
+            elHmDet.classList.add('scrFnc');
+        }
+        else if(elHm.offsetTop - window.innerHeight - elHm.offsetHeight <= window.pageYOffset){
+            elHmTit.classList.remove('scrFnc');
+            elHmDet.classList.remove('scrFnc');
+            countNo();
+        }
+    } //숫자카운트 & 스크롤 이벤트
+    function HowmanyBar(){
+        if(elHm.offsetTop - window.innerHeight + 250 <= window.pageYOffset){
+            elBar.classList.add('scrFnc');
+        }
+        else if(elHm.offsetTop - window.innerHeight - elHm.offsetHeight <= window.pageYOffset){
+            elBar.classList.remove('scrFnc');
+        }
+    } //표 막대부분 스크롤 이벤트
+    function youtube(){
+        for(i=0; i<elVdoThm.length; i++){
+            elVdoThm[i].addEventListener('click',function(){
+                ytvdocon.innerHTML=`<iframe width="400" height="400" src="https://www.youtube.com/embed/c-XG8k_w1LM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="ytvdo"></iframe>`;
+                ytvdo.style='opacity:1';
+            })
+        }
+    } //유튜브 재생 제어 이벤트
+    function bookcase(){
+        if(elBk.offsetTop - window.innerHeight + 500 <= window.pageYOffset){
+            bkli1.classList.add('scrFnc');
+            bkli2.classList.add('scrFnc');
+            bkli3.classList.add('scrFnc');
+        }
+        else if(elBk.offsetTop - window.innerHeight - elBk.offsetHeight <= window.pageYOffset){
+            bkli1.classList.remove('scrFnc');
+            bkli2.classList.remove('scrFnc');
+            bkli3.classList.remove('scrFnc');
+        }
+    } //책장이미지 스크롤 페이드인
+    function freeLi1(){
+        if(elFr.offsetTop - window.innerHeight + 250 <= window.pageYOffset){
+            freeli1.classList.add('scrFnc');
+        }else if(elFr.offsetTop - window.innerHeight - elFr.offsetHeight <= window.pageYOffset){
+            freeli1.classList.remove('scrFnc');
+        }
+    } //무료! li 스크롤 페이드인
+    function freeLi2(){
+        if(elFr.offsetTop - window.innerHeight + 500 <= window.pageYOffset){
+            freeli2.classList.add('scrFnc');
+        }else if(elFr.offsetTop - window.innerHeight - elFr.offsetHeight <= window.pageYOffset){
+            freeli2.classList.remove('scrFnc');
+        }
+    } //무료! li 스크롤 페이드인
+    function timeLi(){
+        if(elTm.offsetTop - window.innerHeight + 500 <= window.pageYOffset){
+            rdtm1.classList.add('scrFnc');
+            rdtm2.classList.add('scrFnc');
+            rdtm3.classList.add('scrFnc');
+            rdtm4.classList.add('scrFnc');
+        }
+        else if(elTm.offsetTop - window.innerHeight - elTm.offsetHeight <= window.pageYOffset){
+            rdtm1.classList.remove('scrFnc');
+            rdtm2.classList.remove('scrFnc');
+            rdtm3.classList.remove('scrFnc');
+            rdtm4.classList.remove('scrFnc');
+        }
+    }
     
-    
+
+
     //TODO 함수실행 
     window.addEventListener('scroll',function(){
         scrollNav();
+        Howmany();
+        HowmanyBar();
+        bookcase();
+        freeLi1();
+        freeLi2();
+        timeLi();
         scrollevent(elBp,elBpTit,elBpDet);
-        scrollevent(elHm,elHmTit,elHmDet);
         scrollevent(elNb,elNbTit,elNbDet);
         scrollevent(elBs,elBsTit,elBsDet);
         scrollevent(elRf,elRfTit,elRfDet);
         scrollevent(elTm,elTmTit,elTmDet);
         scrollevent(elBk,elBkTit,elBkDet);
         scrollevent(elFr,elFrTit,elFrDet);
+        scrollevent(elStr,elStrTit,elStrDet);
         for(let i=0; i<elFncTab.length; i++){
             scrollevent(elFnc,elFncTit[i],elFncDet[i]);
         };
-        scrollevent(elStr,elStrTit,elStrDet);
-    }); //스크롤 이벤트
+    });
+    bsTabFnc();
+    fncTabFnc();
+    faqSlide();
+    youtube();
 
-    let idx = 0;
-    for(let i=0; i<elBsTab.length; i++){
-        elBsTab[i].addEventListener('click',function(){
-            elBsCon[idx].classList.remove('active');
-            elBsTab[idx].classList.remove('active');
-            elBsCon[i].classList.add('active');
-            elBsTab[i].classList.add('active');
-            idx = i;
-        })
-    }; //베스트셀러 탭 
-
-    let idx2 = 0;
-    for(let i=0; i<elFncTab.length; i++){
-        elFncTab[i].addEventListener('click',function(){
-            elFncTab[idx2].classList.remove('active');
-            elFncCon[idx2].classList.remove('active');
-            elFncTab[i].classList.add('active');
-            elFncCon[i].classList.add('active');
-            idx2 = i;
-        })
-    }; //앱 기능 탭
-
-
-    $('.faq li').on('click',function(){
-        if( $(this).hasClass('active') ){
-            $(this).removeClass('active').find('.answer').stop().slideUp();
-            $(this).find('.detail:nth-of-type(2)').html('⌵');
-            return;
-        }else{
-            $(this).addClass('active').find('.answer').stop().slideDown();
-            $(this).find('.detail:nth-of-type(2)').html('💡');
-        }
-    }) //faq 슬라이드업다운 기능
 
 
     //MEMO 슬릭슬라이드 

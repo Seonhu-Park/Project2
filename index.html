@@ -66,7 +66,7 @@
     <!-- TODO 책보유량  -->
     <div class="howmany">
         <div class="hmcon-1">
-            <p class="title">100,000권 중에<br>인생책이 없을까?</p>
+            <p class="title"><span class="countNo">100,000</span>권 중에<br>인생책이 없을까?</p>
             <p class="detail">알고 있었죠?<br>책은 우리가 제일 많아요</p>
         </div>
         <div class="hmcon-2">
@@ -76,7 +76,7 @@
             <div class="bar2">
                 <p>B사</p>
             </div>
-            <div class="bar3">
+            <div class="bar3" id="elBar">
                 <p>밀리의 서재</p>
             </div>
             <img src="img/100_000만권.png">
@@ -145,10 +145,10 @@
         <figure>
             <img src="img/time/readtime1.png">
             <img src="img/time/readtime2.png">
-            <img src="img/time/readtime3.png">
-            <img src="img/time/readtime4.png">
-            <img src="img/time/readtime5.png">
-            <img src="img/time/readtime6.png">
+            <img src="img/time/readtime3.png" id="rdtm1">
+            <img src="img/time/readtime4.png" id="rdtm2">
+            <img src="img/time/readtime5.png" id="rdtm3">
+            <img src="img/time/readtime6.png" id="rdtm4">
         </figure>
     </div>
     <!-- TODO 책장이미지  -->
@@ -156,15 +156,15 @@
         <div class="title">차린 건 많지만<br>밀리는 싹 다 무제한</div>
         <div class="detail">오디오북부터 판타지 무협 로맨스까지<br>이 모든 서비스가 9,900원</div>
         <ul>
-            <li>
+            <li id="bkli1">
                 <img src="img/shelves/최신 베스트셀러.png">
                 <img src="img/shelves/최신 베스트셀러 (1).png" class="case">
             </li>
-            <li>
+            <li id="bkli2">
                 <img src="img/shelves/판타지 무협 로맨스 (1).png" class="case">
                 <img src="img/shelves/판타지 무협 로맨스.png">
             </li>
-            <li>
+            <li id="bkli3">
                 <img src="img/shelves/책이 보이는 오디오북.png">
                 <img src="img/shelves/책이 보이는 오디오북 (1).png" class="case">
             </li>
@@ -178,8 +178,8 @@
         </div>
         <div class="frcon-2">
             <ul>
-                <li>무료 체험 기간 동안 해지해도<br>금액이 청구되지 않아요</li>
-                <li>유료 결제 되어도 사용 이력 없으면<br>즉시 환불해드려요</li>
+                <li id="freeli1">무료 체험 기간 동안 해지해도<br>금액이 청구되지 않아요</li>
+                <li id="freeli2">유료 결제 되어도 사용 이력 없으면<br>즉시 환불해드려요</li>
             </ul>
         </div>
     </div>
@@ -275,10 +275,10 @@
     </div>
     <!-- TODO 구독자 스토리 -->
     <div class="story">
-        <div class="strcon-1">
-            <iframe width="400" height="400" src="https://www.youtube.com/embed/c-XG8k_w1LM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img src="img/youtube_poster.png">
-            <img src="img/icons/btn-video.svg" class="vdobtn">
+        <div class="strcon-1" id="ytvdocon">
+            <iframe width="400" height="400" src="https://www.youtube.com/embed/c-XG8k_w1LM?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="ytvdo"></iframe>
+            <img src="img/youtube_poster.png" class="thum">
+            <img src="img/icons/btn-video.svg" class="vdobtn thum">
         </div>
         <div class="strcon-2">
             <div class="title">내돈내산<br>밀리 구독 이야기</div>

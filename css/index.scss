@@ -1,5 +1,5 @@
 @charset "uft-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 @import url('slick.css');
 
 //MEMO 공통 
@@ -9,6 +9,7 @@
 }
 li{list-style: none;}
 a{text-decoration: none;}
+img{border:none;}
 input:focus{outline:none;}
 button:focus{outline:none;}
 
@@ -78,6 +79,7 @@ body{
         align-items: center;
         padding:0 2%;
         box-sizing: border-box;
+        transition:0.5s;
         figure{
             height:40%;
             img{height:100%;}
@@ -320,6 +322,15 @@ body{
                         font-weight: 900;
                     }
                     
+                }
+                .bar3.scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: a2 1.5s alternate;
+                }
+                @keyframes a2 {
+                    0%{height:0;}
+                    100%{height:250px;}
                 }
                 img{
                     position: absolute;
@@ -577,22 +588,62 @@ body{
                         position:absolute;
                         width:50%;
                         left:-60%; top:10%;
+                        opacity:0;
                     }
                     &:nth-of-type(4){
                         position:absolute;
                         width:50%;
                         left:-70%; top:50%;
+                        opacity:0;
                     }
                     &:nth-of-type(5){
                         position:absolute;
                         width:50%;
                         right:-60%; top:10%;
+                        opacity:0;
                     }
                     &:nth-of-type(6){
                         position:absolute;
                         width:50%;
                         right:-70%; top:50%;
+                        opacity:0;
                     }
+                }
+                #rdtm1.scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: rd1 1.5s alternate;
+                }
+                @keyframes rd1 {
+                    0%{top:40%;}
+                    100%{top:10%;}
+                }
+                #rdtm2.scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: rd2 2s alternate;
+                }
+                @keyframes rd2 {
+                    0%{top:60%;}
+                    100%{top:50%;}
+                }
+                #rdtm3.scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: rd3 2.5s alternate;
+                }
+                @keyframes rd3 {
+                    0%{top:40%;}
+                    100%{top:10%;}
+                }
+                #rdtm4.scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: rd4 3s alternate;
+                }
+                @keyframes rd4 {
+                    0%{top:60%;}
+                    100%{top:50%;}
                 }
             }
         }
@@ -630,6 +681,15 @@ body{
                     display:flex;
                     justify-content: center;
                     align-items: flex-start;
+                    &:nth-of-type(1){
+                        opacity:0;
+                    }
+                    &:nth-of-type(2){
+                        opacity:0;
+                    }
+                    &:nth-of-type(3){
+                        opacity:0;
+                    }
                     img{
                         width:100%;
                     }
@@ -646,6 +706,33 @@ body{
                     &:nth-of-type(3) .case{
                         right:5%;
                     }
+                }
+                li:nth-of-type(1).scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: li1 1.5s alternate;
+                }
+                @keyframes li1 {
+                    0%{transform:translateX(-50%);}
+                    100%{transform:translateX(0);}
+                }
+                li:nth-of-type(2).scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: li2 2.5s alternate;
+                }
+                @keyframes li2 {
+                    0%{transform:translateX(50%);}
+                    100%{transform:translateX(0);}
+                }
+                li:nth-of-type(3).scrFnc{
+                    transition:1.5s;
+                    opacity:1;
+                    animation: li3 3s alternate;
+                }
+                @keyframes li3 {
+                    0%{transform:translateX(-50%);}
+                    100%{transform:translateX(0);}
                 }
             }
         }
@@ -686,6 +773,25 @@ body{
                         font-size:20px;
                         margin-bottom:20px;
                         line-height:1.5;
+                        opacity:0;
+                        &:nth-of-type(1).scrFnc{
+                            transition:1.5s;
+                            opacity:1;
+                            animation: frli 1.5s alternate;
+                        }
+                        @keyframes frli {
+                            0%{transform:translateX(50%);}
+                            100%{transform:translateX(0);}
+                        }
+                        &:nth-of-type(2).scrFnc{
+                            transition:1.5s;
+                            opacity:1;
+                            animation: frli 1.5s alternate;
+                        }
+                        @keyframes frli {
+                            0%{transform:translateX(50%);}
+                            100%{transform:translateX(0);}
+                        }
                     }
                 }
             }
@@ -724,10 +830,11 @@ body{
             }
             .conall{
                 background:#F6F6F6;
-                padding:50px 10% 100px;
                 display:flex;
                 justify-content: space-between;
-                display:none;
+                visibility: hidden;
+                height:0;
+                overflow:hidden;
                 div{
                     img{
                         width:50px;
@@ -757,16 +864,23 @@ body{
                 .cellphone{
                     position: relative;
                     width:300px;
+                    img{margin:0;}
+                    img:focus{outline:none;}
+                    video:focus{outline:none;}
                     .frame{
                         width:100%;
                         position:absolute;
                         left:-10px; top:0;
                         border-radius: 0px;
+                        pointer-events: none;
                     }
                 }
             }
             .conall.active{
-                display:flex;
+                height:auto;
+                padding:50px 10% 100px;
+                visibility:visible;
+                overflow:visible;
             }
         }
         //MEMO 구독자 스토리 
@@ -785,6 +899,7 @@ body{
                 left:15%; top:-10%;
                 iframe{
                     box-shadow: 0 0 30px rgba(0,0,0,0.2);
+                    opacity: 0;
                 }
                 > img{
                     cursor: pointer;
@@ -850,6 +965,9 @@ body{
                             font-weight: 700;
                             color:#333;
                             line-height: 1.5;
+                            &:nth-of-type(2){
+                                cursor:pointer;
+                            }
                         }
                     }
                     .answer{
