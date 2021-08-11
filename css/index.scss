@@ -835,6 +835,7 @@ body{
                 visibility: hidden;
                 height:0;
                 overflow:hidden;
+                box-sizing: border-box;
                 div{
                     img{
                         width:50px;

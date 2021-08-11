@@ -1423,6 +1423,8 @@ body main .function .conall {
   visibility: hidden;
   height: 0;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body main .function .conall div img {
