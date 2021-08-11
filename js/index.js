@@ -135,7 +135,6 @@ function init(){
                 </li>
                 `;
             })
-
             elBsCon[0].innerHTML = tagList;
             elBsCon[1].innerHTML = tagList2;
             elBsCon[2].innerHTML = tagList3;
@@ -161,7 +160,7 @@ function init(){
             elNavHd.classList.remove('scrollNav');
             elNavLogo.innerHTML = '<img src="img/logo_head/밀리의서재 로고1.png">';
         };
-    }; // 헤더부분 스크롤 이벤트 
+    }; //헤더부분 스크롤 이벤트 
     function scrollevent(table,title,detail){
         if(table.offsetTop - window.innerHeight + 250 <= window.pageYOffset){
             title.classList.add('scrFnc');
@@ -189,7 +188,7 @@ function init(){
             scrollevent(elFnc,elFncTit[i],elFncDet[i]);
         };
         scrollevent(elStr,elStrTit,elStrDet);
-    }); // 스크롤 이벤트
+    }); //스크롤 이벤트
 
     let idx = 0;
     for(let i=0; i<elBsTab.length; i++){
@@ -200,7 +199,7 @@ function init(){
             elBsTab[i].classList.add('active');
             idx = i;
         })
-    };
+    }; //베스트셀러 탭 
 
     let idx2 = 0;
     for(let i=0; i<elFncTab.length; i++){
@@ -211,8 +210,22 @@ function init(){
             elFncCon[i].classList.add('active');
             idx2 = i;
         })
-    };
+    }; //앱 기능 탭
 
+
+    $('.faq li').on('click',function(){
+        if( $(this).hasClass('active') ){
+            $(this).removeClass('active').find('.answer').stop().slideUp();
+            $(this).find('.detail:nth-of-type(2)').html('⌵');
+            return;
+        }else{
+            $(this).addClass('active').find('.answer').stop().slideDown();
+            $(this).find('.detail:nth-of-type(2)').html('💡');
+        }
+    }) //faq 슬라이드업다운 기능
+
+
+    //MEMO 슬릭슬라이드 
     $('.single-item').slick({
         dots:true
     });

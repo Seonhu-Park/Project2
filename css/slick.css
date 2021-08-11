@@ -86,15 +86,15 @@
 {
     float: right;
 }
-.slick-slide img,video
+.slick-slide img
 {
     display: block;
 }
-.slick-slide.slick-loading img,video
+.slick-slide.slick-loading img
 {
     display: none;
 }
-.slick-slide.dragging img,video
+.slick-slide.dragging img
 {
     pointer-events: none;
 }
@@ -131,7 +131,7 @@
     width:100%;
     height:100%;
 }
-.slick-list img,video{
+.slick-list img{
     width:100%;
     height:100%;
 }
