@@ -173,6 +173,7 @@ function init(){
         }
     }; //컨텐츠 스크롤 페이드인 이벤트 
     
+    
     //TODO 함수실행 
     window.addEventListener('scroll',function(){
         scrollNav();
@@ -212,11 +213,9 @@ function init(){
         })
     };
 
-
-    
-
-
-    
+    $('.single-item').slick({
+        dots:true
+    });
 
 
 };

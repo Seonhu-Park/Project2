@@ -1,5 +1,6 @@
 @charset "uft-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+@import url('slick.css');
 
 //MEMO 공통 
 *{
@@ -9,6 +10,7 @@
 li{list-style: none;}
 a{text-decoration: none;}
 input:focus{outline:none;}
+button:focus{outline:none;}
 
 //MEMO 믹스인 
 @mixin title(){
@@ -750,38 +752,15 @@ body{
                         .detail2{
                             @include detail();
                         }
-                        ul{
-                            margin-top:25px;
-                            display:flex;
-                            justify-content: flex-start;
-                            li{
-                                @include roundBtn();
-                                &:nth-of-type(1){
-                                    background: #333;
-                                    color:white;
-                                }
-                            }
-                        }
                     }
                 }
                 .cellphone{
                     position: relative;
                     width:300px;
-                    display:flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    // overflow: hidden;
-                    > img{
-                        width:100%;
-                        border-radius: 50px;
-                    }
-                    video{
-                        width:95%;
-                    }
                     .frame{
-                        width:105%;
+                        width:100%;
                         position:absolute;
-                        left:0; top:0;
+                        left:-10px; top:0;
                         border-radius: 0px;
                     }
                 }
