@@ -169,7 +169,7 @@ body #load .loader {
 body .popup {
   width: 100vw;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   position: absolute;
   left: 0;
   top: 0;
@@ -182,8 +182,8 @@ body .popup article {
   height: 45vw;
   background: -webkit-gradient(linear, right bottom, left top, from(#a750f3), to(#ffeb60));
   background: linear-gradient(to left top, #a750f3, #ffeb60);
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 30px rgba(255, 251, 3, 0.2);
+          box-shadow: 0 0 30px rgba(255, 251, 3, 0.2);
   border-radius: 30px;
   position: fixed;
   left: 50%;
