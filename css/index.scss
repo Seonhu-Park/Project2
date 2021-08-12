@@ -303,7 +303,7 @@ body{
                 animation: banner 2s alternate;
             }
             @keyframes banner {
-                0%{top:20%; opacity:0;}
+                0%{top:40%; opacity:0;}
                 100%{top:15%; opacity:1;}
             }
             .bnimg-2{
@@ -314,7 +314,7 @@ body{
                 animation: banner2 2s alternate;
             }
             @keyframes banner2 {
-                0%{right:0%; opacity:0;}
+                0%{right:-10%; opacity:0;}
                 100%{right:3%; opacity:1;}
             }
             .bnimg-3{
@@ -1714,9 +1714,19 @@ body{
                 .bnimg-1{
                     left:8%; top:18%;
                     width:35%;
+                    animation: banner11 2.5s alternate;
+                }
+                @keyframes banner11 {
+                    0%{top:40%; opacity:0;}
+                    100%{top:18%; opacity:1;}
                 }
                 .bnimg-2{
                     width:70%;
+                    animation: banner21 2.5s alternate;
+                }
+                @keyframes banner21 {
+                    0%{right:-10%; opacity:0;}
+                    100%{right:3%; opacity:1;}
                 }
                 .bnimg-3{
                     display:none;

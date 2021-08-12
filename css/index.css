@@ -390,7 +390,7 @@ body main .banner .bnimg-1 {
 
 @-webkit-keyframes banner {
   0% {
-    top: 20%;
+    top: 40%;
     opacity: 0;
   }
   100% {
@@ -401,7 +401,7 @@ body main .banner .bnimg-1 {
 
 @keyframes banner {
   0% {
-    top: 20%;
+    top: 40%;
     opacity: 0;
   }
   100% {
@@ -423,7 +423,7 @@ body main .banner .bnimg-2 {
 
 @-webkit-keyframes banner2 {
   0% {
-    right: 0%;
+    right: -10%;
     opacity: 0;
   }
   100% {
@@ -434,7 +434,7 @@ body main .banner .bnimg-2 {
 
 @keyframes banner2 {
   0% {
-    right: 0%;
+    right: -10%;
     opacity: 0;
   }
   100% {
@@ -2590,9 +2590,53 @@ body footer article ul li {
     left: 8%;
     top: 18%;
     width: 35%;
+    -webkit-animation: banner11 2.5s alternate;
+            animation: banner11 2.5s alternate;
+  }
+  @-webkit-keyframes banner11 {
+    0% {
+      top: 40%;
+      opacity: 0;
+    }
+    100% {
+      top: 18%;
+      opacity: 1;
+    }
+  }
+  @keyframes banner11 {
+    0% {
+      top: 40%;
+      opacity: 0;
+    }
+    100% {
+      top: 18%;
+      opacity: 1;
+    }
   }
   body main .banner .bnimg-2 {
     width: 70%;
+    -webkit-animation: banner21 2.5s alternate;
+            animation: banner21 2.5s alternate;
+  }
+  @-webkit-keyframes banner21 {
+    0% {
+      right: -10%;
+      opacity: 0;
+    }
+    100% {
+      right: 3%;
+      opacity: 1;
+    }
+  }
+  @keyframes banner21 {
+    0% {
+      right: -10%;
+      opacity: 0;
+    }
+    100% {
+      right: 3%;
+      opacity: 1;
+    }
   }
   body main .banner .bnimg-3 {
     display: none;
