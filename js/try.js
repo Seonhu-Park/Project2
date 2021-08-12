@@ -22,3 +22,7 @@ function init(){
 
 }
 window.onload = init;
+
+$(window).load(function() {
+    $('#load').hide();
+});
