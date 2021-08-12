@@ -1942,6 +1942,19 @@ body{
 // TODO 반응형 PC 큰 화면  
 @media (min-width:1601px) and (max-width:2000px){
 body{
+    .popup{
+        article{
+            h1{
+                font-size:40px;
+            }
+            h4{
+                font-size:22px;
+            }
+            span{
+                font-size:18px;
+            }
+        }
+    }
     main{
         .howmany{
             padding: 100px 20%;

@@ -2855,6 +2855,15 @@ body footer article ul li {
 }
 
 @media (min-width: 1601px) and (max-width: 2000px) {
+  body .popup article h1 {
+    font-size: 40px;
+  }
+  body .popup article h4 {
+    font-size: 22px;
+  }
+  body .popup article span {
+    font-size: 18px;
+  }
   body main .howmany {
     padding: 100px 20%;
   }
