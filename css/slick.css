@@ -212,6 +212,10 @@
     padding:0;
 }
 
+.slick-active img{
+    vertical-align: bottom;
+}
+
 
 
 @media (min-width:1601px) and (max-width:2000px){
@@ -236,5 +240,11 @@
     .slick-dots{
         left:50%; bottom:-50px;
         transform: translateX(-50%);
+    }
+    .multiple-items li:nth-of-type(1){
+        margin-left:5vw;
+    }
+    .multiple-items li:nth-of-type(7){
+        margin-right:5vw;
     }
 }

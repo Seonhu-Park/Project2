@@ -6,6 +6,7 @@ function init(){
     const elNav = document.querySelector('header'),
           elNavLogo = document.querySelector('header figure'),
           elNavHd = document.querySelector('.hdmenu'),
+          elBanner = document.querySelector('.bnimg-1'),
           elVdo = document.querySelector('.video'),
           elCm = document.querySelector('.cm'),
           elBp = document.querySelector('.bestpoint'),
@@ -149,11 +150,17 @@ function init(){
                 {
                     breakpoint: 1200,
                     settings : {
-                        slidesToShow: 4.5
+                        slidesToShow: 3.8
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings : {
+                        slidesToShow: 3.2
                     }
                 }
             ]
-          });
+        });
     }
 
 
@@ -301,7 +308,22 @@ function init(){
             rdtm4.classList.remove('scrFnc');
         }
     }
-    
+    xbtn.onclick = function(){setCookie();}
+    getCookie();
+
+    function setCookie(){
+        if(chked.checked){
+            let date = new Date();
+            date.setDate( date.getDate() + 2 );
+            document.cookie = 'popup=test;expires='+date.toUTCString();
+        }
+        popup.style='display:none;';
+    }
+    function getCookie(){
+        if(document.cookie.match('test')){
+            popup.style='display:none;';
+        }
+    }
 
 
     //TODO 함수실행 
@@ -325,7 +347,9 @@ function init(){
             scrollevent(elFnc,elFncTit[i],elFncDet[i]);
         };
     });
-    
+    window.addEventListener('load',function(){
+        elBanner.classList.add('active');
+    });
     fncTabFnc();
     faqSlide();
     youtube();
