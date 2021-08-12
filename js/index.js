@@ -45,7 +45,8 @@ function init(){
           elBsCon = document.querySelectorAll('.bestseller .bstlist'),
           elFncTab = document.querySelectorAll('.function nav div'),
           elFncCon = document.querySelectorAll('.function .conall'),
-          elVdoThm = document.querySelectorAll('.thum');
+          elVdoThm = document.querySelectorAll('.thum'),
+          elNavi = document.querySelectorAll('.navi ul li');
     let tagList = '', tagList2 = '', tagList3 = '', tagList4 = '', tagList5 = '', tagList6 = '', newList = '', rofanList = '';
 
 
@@ -164,7 +165,6 @@ function init(){
     }
 
 
-
     //TODO 함수선언 
     function scrollNav(){
         if(window.scrollY >= elVdo.offsetTop){
@@ -180,6 +180,23 @@ function init(){
             elNavLogo.innerHTML = '<img src="img/logo_head/밀리의서재 로고1.png">';
         };
     }; //헤더부분 스크롤 이벤트 
+    function scrollNavi(){
+        if(window.scrollY >= elBp.offsetTop-200){
+            navi.style='opacity: 1;';
+        }
+        else if((window.scrollY <= elBp.offsetTop)){
+            navi.style='opacity: 0;';
+        };
+    }; //네비게이터 스크롤 이벤트
+    function NaviGo(x,elcon){
+        elNavi[x].addEventListener('click',function(){
+            window.scrollTo({
+                left:0,
+                top: elcon.offsetTop - elNav.offsetHeight,
+                behavior:'smooth'
+            });
+        });
+    } //네비게이터 이동 이벤트
     function scrollevent(table,title,detail){
         if(table.offsetTop - window.innerHeight + 250 <= window.pageYOffset){
             title.classList.add('scrFnc');
@@ -329,6 +346,7 @@ function init(){
     //TODO 함수실행 
     window.addEventListener('scroll',function(){
         scrollNav();
+        scrollNavi();
         Howmany();
         HowmanyBar();
         bookcase();
@@ -353,6 +371,16 @@ function init(){
     fncTabFnc();
     faqSlide();
     youtube();
+    NaviGo(0,elBp);
+    NaviGo(1,elHm);
+    NaviGo(2,elNb);
+    NaviGo(3,elBs);
+    NaviGo(4,elRf);
+    NaviGo(5,elTm);
+    NaviGo(6,elBk);
+    NaviGo(7,elFr);
+    NaviGo(8,elFnc);
+    NaviGo(9,elStr);
 
 
 

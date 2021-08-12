@@ -136,6 +136,227 @@ body{
         left: calc(50% - #{$size / 2});
         }
     }
+    //MEMO 네비게이터 
+    .navi{
+        position:fixed;
+        right:2%; top:50%;
+        transform:translateY(-50%);
+        z-index:199;
+        opacity: 0;
+        transition:0.5s;
+        ul{
+            height:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index:199;
+            li{
+                position:relative;
+                cursor:pointer;
+                z-index:199;
+                width:13px; height:13px;
+                background:#9f9a8f;
+                border-radius: 10px;
+                margin:20px 0 0 0;
+                &:first-child{
+                    margin:0;
+                }
+                &:hover{
+                    background:linear-gradient(to left top, #a750f3, #ffeb60);
+                }
+            }
+            li:nth-child(1):hover:before{
+                display:block;
+            }
+            li:nth-child(2):hover:before{
+                display:block;
+            }
+            li:nth-child(3):hover:before{
+                display:block;
+            }
+            li:nth-child(4):hover:before{
+                display:block;
+            }
+            li:nth-child(5):hover:before{
+                display:block;
+            }
+            li:nth-child(6):hover:before{
+                display:block;
+            }
+            li:nth-child(7):hover:before{
+                display:block;
+            }
+            li:nth-child(8):hover:before{
+                display:block;
+            }
+            li:nth-child(9):hover:before{
+                display:block;
+            }
+            li:nth-child(10):hover:before{
+                display:block;
+            }
+            li:nth-child(1)::before{
+                content:'전자책 장점';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(2)::before{
+                content:'책 보유량';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(3)::before{
+                content:'신간';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(4)::before{
+                content:'베스트셀러';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(5)::before{
+                content:'다양한 장르';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(6)::before{
+                content:'완독지수';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(7)::before{
+                content:'전부 무제한';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(8)::before{
+                content:'첫 달 무료';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(9)::before{
+                content:'차별화 기능';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+            li:nth-child(10)::before{
+                content:'밀리 이야기';
+                background:black;
+                color:#fff;
+                border-radius: 20px;
+                text-align: center;
+                width:80px;
+                padding:5px 15px;
+                box-sizing: border-box;
+                left:-90px; top:50%;
+                transform:translateY(-50%);
+                position:absolute;
+                font-size:10px;
+                display:none;
+            }
+        }
+        &::before{
+            position:absolute;
+            left:50%; top:50%;
+            transform:translate(-50%,-50%);
+            content:'';
+            display:flex;
+            width:1px; height:100%;
+            background:#a7a39a;
+            z-index:198;
+        }
+    }
     //MEMO 팝업 
     .popup{
         width:100vw; height:100%;
@@ -1215,6 +1436,9 @@ body{
 // TODO 반응형 모바일 
 @media (min-width:360px) and (max-width:767px){
     body{
+        .navi{
+            display:none;
+        }
         .popup{
             article{
                 width:70vw; height:45vw;

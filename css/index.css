@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("common.css");
 @-webkit-keyframes a1 {
   0% {
@@ -164,6 +165,299 @@ body #load .loader {
   position: absolute;
   top: calc(50% - 1.25em);
   left: calc(50% - 1.25em);
+}
+
+body .navi {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 199;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .navi ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 199;
+}
+
+body .navi ul li {
+  position: relative;
+  cursor: pointer;
+  z-index: 199;
+  width: 13px;
+  height: 13px;
+  background: #9f9a8f;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+}
+
+body .navi ul li:first-child {
+  margin: 0;
+}
+
+body .navi ul li:hover {
+  background: -webkit-gradient(linear, right bottom, left top, from(#a750f3), to(#ffeb60));
+  background: linear-gradient(to left top, #a750f3, #ffeb60);
+}
+
+body .navi ul li:nth-child(1):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(2):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(3):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(4):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(5):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(6):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(7):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(8):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(9):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(10):hover:before {
+  display: block;
+}
+
+body .navi ul li:nth-child(1)::before {
+  content: '전자책 장점';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(2)::before {
+  content: '책 보유량';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(3)::before {
+  content: '신간';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(4)::before {
+  content: '베스트셀러';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(5)::before {
+  content: '다양한 장르';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(6)::before {
+  content: '완독지수';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(7)::before {
+  content: '전부 무제한';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(8)::before {
+  content: '첫 달 무료';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(9)::before {
+  content: '차별화 기능';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi ul li:nth-child(10)::before {
+  content: '밀리 이야기';
+  background: black;
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-size: 10px;
+  display: none;
+}
+
+body .navi::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1px;
+  height: 100%;
+  background: #a7a39a;
+  z-index: 198;
 }
 
 body .popup {
@@ -1976,6 +2270,9 @@ body footer article ul li {
 }
 
 @media (min-width: 360px) and (max-width: 767px) {
+  body .navi {
+    display: none;
+  }
   body .popup article {
     width: 70vw;
     height: 45vw;

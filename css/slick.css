@@ -247,4 +247,10 @@
     .multiple-items li:nth-of-type(7){
         margin-right:5vw;
     }
+    .single-item img{
+        border-radius: 30px;
+    }
+    .single-item video{
+        border-radius: 30px;
+    }
 }
