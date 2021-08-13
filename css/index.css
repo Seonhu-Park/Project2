@@ -2430,6 +2430,7 @@ body footer article ul li {
   }
   body main .newbook ul li {
     width: 28vw;
+    font-size: 14px;
   }
   body main .bestseller {
     padding: 50px 0%;
@@ -2479,6 +2480,7 @@ body footer article ul li {
   }
   body main .bestseller .bstlist li {
     width: 28vw;
+    font-size: 14px;
   }
   body main .bestseller .bstlist li:nth-of-type(1) {
     margin-left: 5vw;
@@ -2504,6 +2506,7 @@ body footer article ul li {
     margin-top: 50px;
   }
   body main .rofan ul li {
+    font-size: 14px;
     width: 28vw;
   }
   body main .time {
