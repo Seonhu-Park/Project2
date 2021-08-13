@@ -198,11 +198,12 @@ body .navi ul li {
   position: relative;
   cursor: pointer;
   z-index: 199;
-  width: 13px;
-  height: 13px;
-  background: #9f9a8f;
+  width: 14px;
+  height: 14px;
+  background: -webkit-gradient(linear, right bottom, left top, from(#a750f3), to(#ffeb60));
+  background: linear-gradient(to left top, #a750f3, #ffeb60);
   border-radius: 10px;
-  margin: 20px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 body .navi ul li:first-child {
@@ -210,8 +211,19 @@ body .navi ul li:first-child {
 }
 
 body .navi ul li:hover {
-  background: -webkit-gradient(linear, right bottom, left top, from(#a750f3), to(#ffeb60));
-  background: linear-gradient(to left top, #a750f3, #ffeb60);
+  background: #000;
+}
+
+body .navi ul li::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 1px;
+  width: 50px;
+  background: #a7a39a;
 }
 
 body .navi ul li:nth-child(1):hover:before {
@@ -442,22 +454,6 @@ body .navi ul li:nth-child(10)::before {
   position: absolute;
   font-size: 10px;
   display: none;
-}
-
-body .navi::before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  content: '';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1px;
-  height: 100%;
-  background: #a7a39a;
-  z-index: 198;
 }
 
 body .popup {

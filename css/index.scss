@@ -154,15 +154,24 @@ body{
                 position:relative;
                 cursor:pointer;
                 z-index:199;
-                width:13px; height:13px;
-                background:#9f9a8f;
+                width:14px; height:14px;
+                background:linear-gradient(to left top, #a750f3, #ffeb60);
                 border-radius: 10px;
-                margin:20px 0 0 0;
+                margin:40px 0 0 0;
                 &:first-child{
                     margin:0;
                 }
                 &:hover{
-                    background:linear-gradient(to left top, #a750f3, #ffeb60);
+                    background:#000;
+                }
+                &::after{
+                    content:'';
+                    position:absolute;
+                    left:14px; top:50%;
+                    transform:translateY(-50%);
+                    height:1px;
+                    width:50px;
+                    background:#a7a39a;
                 }
             }
             li:nth-child(1):hover:before{
@@ -346,16 +355,16 @@ body{
                 display:none;
             }
         }
-        &::before{
-            position:absolute;
-            left:50%; top:50%;
-            transform:translate(-50%,-50%);
-            content:'';
-            display:flex;
-            width:1px; height:100%;
-            background:#a7a39a;
-            z-index:198;
-        }
+        // &::before{
+        //     position:absolute;
+        //     left:50%; top:50%;
+        //     transform:translate(-50%,-50%);
+        //     content:'';
+        //     display:flex;
+        //     width:1px; height:100%;
+        //     background:#a7a39a;
+        //     z-index:198;
+        // }
     }
     //MEMO 팝업 
     .popup{
