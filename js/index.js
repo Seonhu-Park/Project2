@@ -49,7 +49,7 @@ function init(){
           elNavi = document.querySelectorAll('.navi ul li');
     let tagList = '', tagList2 = '', tagList3 = '', tagList4 = '', tagList5 = '', tagList6 = '', newList = '', rofanList = '';
 
-
+    
 
     //TODO fetch jason 
     function callback(data){
@@ -388,6 +388,7 @@ function init(){
     $('.single-item').slick({
         dots:true
     });
+
 
 
 };

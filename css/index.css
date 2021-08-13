@@ -2031,6 +2031,7 @@ body main .function .conall div .minitab .detail2 {
   font-weight: 400;
   color: #555;
   line-height: 1.5;
+  display: none;
 }
 
 body main .function .conall .cellphone {
@@ -2752,6 +2753,7 @@ body footer article ul li {
   }
   body main .function .conall .cellphone {
     margin-top: 30px;
+    margin-bottom: 90px;
     width: 200px;
   }
   body main .function .conall .cellphone > img {

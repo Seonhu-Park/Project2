@@ -1265,6 +1265,7 @@ body{
                         margin-top:100px;
                         .detail2{
                             @include detail();
+                            display:none;
                         }
                     }
                 }
@@ -1811,6 +1812,7 @@ body{
                     }
                     .cellphone{
                         margin-top:30px;
+                        margin-bottom:90px;
                         width:200px;
                         > img{
                             border-radius: 35px;

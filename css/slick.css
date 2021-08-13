@@ -173,11 +173,71 @@
 /*  인디게이터 ul li button */
 .slick-dots{
     position:absolute;
-    left:-55vw; bottom:100px;
+    left:-58.5vw; bottom:100px;
     margin-top:25px;
     display:flex;
     justify-content: flex-start;
 }
+
+.s-1 .slick-dots li.slick-active::after{
+    width:350px;
+    position:absolute;
+    left:0; top:-120px;
+    white-space: pre;
+}
+.s-1 .slick-dots li.slick-active:nth-of-type(1)::after{
+    content:'하루의 시작과 마무리를 오디오북과 함께\A지하철에서도, 잠들기 전에도 독서하세요';
+}
+.s-1 .slick-dots li.slick-active:nth-of-type(2)::after{
+    content:'귀로 듣다가 눈으로도 같이 보면\A더 내용이 잘 이해돼요';
+}
+.s-1 .slick-dots li.slick-active:nth-of-type(3)::after{
+    content:'30분만에 책 요약\A핵심만 쏙 골라 읽어주는 오디오북';
+}
+.s-1 .slick-dots li.slick-active:nth-of-type(4)::after{
+    content:'이제훈부터 옥주현까지\A셀럽이 읽어주는 오디오북';
+}
+.s-1 .slick-dots li.slick-active:nth-of-type(5)::after{
+    content:'내가 만든 오디오북\A오디오북도 만들고 돈도 벌고';
+}
+
+.s-2 .slick-dots li.slick-active::after{
+    width:350px;
+    position:absolute;
+    left:0; top:-120px;
+    white-space: pre;
+}
+.s-2 .slick-dots li.slick-active:nth-of-type(1)::after{
+    content:'시선 추적 기능\A눈동자로 페이지를 넘길 수 있어요';
+}
+.s-2 .slick-dots li.slick-active:nth-of-type(2)::after{
+    content:'어느 기기에서도 OK\A스마트폰, 태블릭, PC, E ink 기기까지';
+}
+.s-2 .slick-dots li.slick-active:nth-of-type(3)::after{
+    content:'다크 모드\A전자책이 눈 아프다는 편견은 버려요';
+}
+.s-2 .slick-dots li.slick-active:nth-of-type(4)::after{
+    content:'자유로운 보기 설정\A줄 간격부터 폰트까지 내 마음대로! 독서를 더 편하게!';
+}
+
+.s-3 .slick-dots li.slick-active::after{
+    width:350px;
+    position:absolute;
+    left:0; top:-120px;
+    white-space: pre;
+}
+.s-3 .slick-dots li.slick-active:nth-of-type(1)::after{
+    content:'오늘의 토픽\A최신 트렌드와 관련된 책으로 큐레이션';
+}
+.s-3 .slick-dots li.slick-active:nth-of-type(2)::after{
+    content:'오늘의 책\A이 책만 읽어도 오늘 잘 살았다';
+}
+.s-3 .slick-dots li.slick-active:nth-of-type(3)::after{
+    content:'이럴 땐\A이런 책 내 상황에 딱 맞는 회원들의 추천 책';
+}
+
+
+
 .slick-dots li button{
     cursor:pointer;
     padding:3px 18px;
@@ -220,13 +280,13 @@
 
 @media (min-width:1601px) and (max-width:2000px){
     .slick-dots{
-        left:-40vw; bottom:100px;
+        left:-44vw; bottom:100px;
     }
 }
 
 @media (min-width:768px) and (max-width:1200px){
     .slick-dots{
-        left:-45vw; bottom:20px;
+        left:-55vw; bottom:20px;
     }
     .multiple-items li:nth-of-type(1){
         margin-left:5vw;
@@ -238,8 +298,35 @@
 
 @media (min-width:360px) and (max-width:767px){
     .slick-dots{
-        left:50%; bottom:-50px;
+        left:50%; bottom:-150px;
         transform: translateX(-50%);
+    }
+    .s-1 .slick-dots li.slick-active::after{
+        font-size:14px;
+        width:350px;
+        position:absolute;
+        left:50%; top:-80px;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: pre;
+    }
+    .s-2 .slick-dots li.slick-active::after{
+        font-size:14px;
+        width:350px;
+        position:absolute;
+        left:50%; top:-80px;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: pre;
+    }
+    .s-3 .slick-dots li.slick-active::after{
+        font-size:14px;
+        width:350px;
+        position:absolute;
+        left:50%; top:-80px;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: pre;
     }
     .multiple-items li:nth-of-type(1){
         margin-left:5vw;
