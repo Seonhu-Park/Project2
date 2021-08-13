@@ -1921,6 +1921,9 @@ body{
 // TODO 반응형 태블릿 
 @media (min-width:768px) and (max-width:1200px){
     body{
+        .navi{
+            display:none;
+        }
         .popup{
             article{
                 height:50vw;
