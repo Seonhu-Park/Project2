@@ -189,7 +189,7 @@ function init(){
         };
     }; //네비게이터 스크롤 이벤트
     function naviscroll(num,EL){
-        if(pageYOffset > EL.offsetTop - 100){
+        if(pageYOffset > EL.offsetTop - 60){
             $('.navi ul li').removeClass('active');
             $('.navi ul li').eq(num).addClass('active');
         }
