@@ -33,7 +33,7 @@ body #load {
   position: fixed;
   opacity: 1;
   background: #222;
-  z-index: 200;
+  z-index: 201;
   text-align: center;
 }
 
@@ -169,7 +169,7 @@ body #load .loader {
 
 body .navi {
   position: fixed;
-  right: 2%;
+  right: 1%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -224,6 +224,10 @@ body .navi ul li::after {
   height: 1px;
   width: 50px;
   background: #a7a39a;
+}
+
+body .navi ul li.active {
+  background: #000;
 }
 
 body .navi ul li:nth-child(1):hover:before {
@@ -463,7 +467,7 @@ body .popup {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 150;
+  z-index: 200;
 }
 
 body .popup article {

@@ -41,7 +41,7 @@ body{
         position: fixed;
         opacity: 1;
         background: #222;
-        z-index: 200;
+        z-index: 201;
         text-align: center;
         $colors:
         hsla(337, 84, 48, 0.75)
@@ -139,7 +139,7 @@ body{
     //MEMO 네비게이터 
     .navi{
         position:fixed;
-        right:2%; top:50%;
+        right:1%; top:50%;
         transform:translateY(-50%);
         z-index:199;
         opacity: 0;
@@ -173,6 +173,9 @@ body{
                     width:50px;
                     background:#a7a39a;
                 }
+            }
+            li.active{
+                background:#000;
             }
             li:nth-child(1):hover:before{
                 display:block;
@@ -372,7 +375,7 @@ body{
         background:rgba(0,0,0,0.85);
         position:absolute;
         left:0; top:0;
-        z-index:150;
+        z-index:200;
         article{
             position:relative;
             width:40vw; height:45vw;

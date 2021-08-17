@@ -188,6 +188,12 @@ function init(){
             navi.style='opacity: 0;';
         };
     }; //네비게이터 스크롤 이벤트
+    function naviscroll(num,EL){
+        if(pageYOffset > EL.offsetTop - 100){
+            $('.navi ul li').removeClass('active');
+            $('.navi ul li').eq(num).addClass('active');
+        }
+    } //네비게이터 스크롤 이동 이벤트
     function NaviGo(x,elcon){
         elNavi[x].addEventListener('click',function(){
             window.scrollTo({
@@ -364,6 +370,16 @@ function init(){
         for(let i=0; i<elFncTab.length; i++){
             scrollevent(elFnc,elFncTit[i],elFncDet[i]);
         };
+        naviscroll(0,elBp);
+        naviscroll(1,elHm);
+        naviscroll(2,elNb);
+        naviscroll(3,elBs);
+        naviscroll(4,elRf);
+        naviscroll(5,elTm);
+        naviscroll(6,elBk);
+        naviscroll(7,elFr);
+        naviscroll(8,elFnc);
+        naviscroll(9,elStr);
     });
     window.addEventListener('load',function(){
         elBanner.classList.add('active');
@@ -382,6 +398,12 @@ function init(){
     NaviGo(8,elFnc);
     NaviGo(9,elStr);
 
+    let num = 0;
+    $('.navi ul li').on('click',function(){
+        num = $(this).index();
+        $('.navi ul li').removeClass('active');
+        $('.navi ul li').eq(num).addClass('active');
+    })
 
 
     //MEMO 슬릭슬라이드 
