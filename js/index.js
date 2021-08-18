@@ -198,7 +198,7 @@ function init(){
         elNavi[x].addEventListener('click',function(){
             window.scrollTo({
                 left:0,
-                top: elcon.offsetTop - elNav.offsetHeight,
+                top: elcon.offsetTop - elNav.offsetHeight+1,
                 behavior:'smooth'
             });
         });
