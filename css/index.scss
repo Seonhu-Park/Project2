@@ -154,10 +154,10 @@ body{
                 position:relative;
                 cursor:pointer;
                 z-index:199;
-                width:14px; height:14px;
+                width:8px; height:8px;
                 background:linear-gradient(to left top, #a750f3, #ffeb60);
                 border-radius: 10px;
-                margin:40px 0 0 0;
+                margin:30px 0 0 0;
                 &:first-child{
                     margin:0;
                 }
@@ -172,6 +172,7 @@ body{
                     height:1px;
                     width:50px;
                     background:#a7a39a;
+                    display:none;
                 }
             }
             li.active{
