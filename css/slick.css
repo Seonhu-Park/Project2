@@ -150,6 +150,7 @@
     background:none;
 }
 .slick-prev{
+    display:none;
     left:5%;
 }
 .slick-prev::after{
@@ -157,9 +158,10 @@
     display:inline-block;
     width:50px;
     height:50px;
-    background:none;
+    display:none;
 }
 .slick-next{
+    display:none;
     right:5%;
 }
 .slick-next::after{
@@ -167,7 +169,7 @@
     display:inline-block;
     width:50px;
     height:50px;
-    background:none;
+    display:none;
 }
 
 
@@ -269,7 +271,7 @@
 }
 .single-item video{
     /* width:90%; */
-    border-radius: 50px;
+    border-radius: 0px;
     font-size:0;
     vertical-align: top;
     padding:0;
